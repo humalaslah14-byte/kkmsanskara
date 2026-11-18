@@ -1,0 +1,2405 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KKM SANSKARA — Kuliah Kerja Mahasiswa UIN Maulana Malik Ibrahim Malang</title>
+  <meta name="description" content="Portal informasi resmi Kuliah Kerja Mahasiswa (KKM) SANSKARA LP2M UIN Maulana Malik Ibrahim Malang. Periode pengabdian 28 Desember 2026 – 04 Februari 2027." />
+
+  <!-- Google Fonts: Playfair Display, Great Vibes, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            burgundy: {
+              950: '#2B0916',
+              900: '#4A0D25',
+              850: '#711625',
+              800: '#641433',
+              700: '#882248',
+              600: '#A3325C',
+              100: '#F7E8EE',
+              50: '#FCF5F8',
+            },
+            ivory: {
+              50: '#FFFDF9',
+              100: '#FAF6F0',
+              150: '#FCF9EE',
+              200: '#F3ECE1',
+              300: '#E5DAC8',
+            },
+            sand: {
+              100: '#F4EAE0',
+              200: '#EAD8C3',
+              300: '#DFC7AC',
+            },
+            gold: {
+              400: '#D9B67C',
+              500: '#C69C5E',
+              600: '#A67D42',
+            },
+            taupe: '#5C474E',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            script: ['"Great Vibes"', 'cursive'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'luxury': '0 18px 45px -12px rgba(74, 13, 37, 0.14)',
+            'luxury-lg': '0 25px 60px -15px rgba(43, 9, 22, 0.28)',
+            'gold-glow': '0 10px 30px -8px rgba(198, 156, 94, 0.35)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Custom Scrollbar bertema Burgundy & Ivory */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF6F0;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #882248;
+      border-radius: 9999px;
+      border: 2px solid #FAF6F0;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #4A0D25;
+    }
+
+    /* Ornamen Pola Batik / Damask Nusantara Halus (SVG Data URI) */
+    .bg-batik-burgundy {
+      background-color: #4A0D25;
+      background-image:
+        radial-gradient(circle at 18% 22%, rgba(198, 156, 94, 0.14) 0%, transparent 45%),
+        radial-gradient(circle at 85% 78%, rgba(255, 253, 249, 0.08) 0%, transparent 42%),
+        url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23FFFDF9' stroke-opacity='0.055' stroke-width='1'%3E%3Cpath d='M40 0C45 15 65 15 80 0C65 15 65 35 80 40C65 45 65 65 80 80C65 65 45 65 40 80C35 65 15 65 0 80C15 65 15 45 0 40C15 35 15 15 0 0C15 15 35 15 40 0Z'/%3E%3Ccircle cx='40' cy='40' r='10'/%3E%3Ccircle cx='40' cy='40' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .bg-batik-ivory {
+      background-color: #FAF6F0;
+      background-image: url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23641433' stroke-opacity='0.045' stroke-width='1'%3E%3Cpath d='M36 0C40 14 58 14 72 0C58 14 58 32 72 36C58 40 58 58 72 72C58 58 40 58 36 72C32 58 14 58 0 72C14 58 14 40 0 36C14 32 14 14 0 0C14 14 32 14 36 0Z'/%3E%3Ccircle cx='36' cy='36' r='8'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    /* Bingkai Medali / Parchment Champagne Sand agar elemen Ivory (#FCF9EE), Burgundy (#711625), & Teks Hitam pada Logo tampil tajam */
+    .logo-medallion-bg {
+      background: radial-gradient(circle at 50% 42%, #F6EDE3 0%, #EAD8C3 62%, #DEC4A6 100%);
+      box-shadow: inset 0 2px 14px rgba(113, 22, 37, 0.12), 0 16px 38px -10px rgba(43, 9, 22, 0.35);
+    }
+
+    /* Gaya Tipografi Khusus Judul SANSKARA Menyerupai Poster */
+    .sanskara-script-s {
+      font-family: 'Great Vibes', cursive;
+      text-shadow: 0 4px 18px rgba(43, 9, 22, 0.45);
+    }
+
+    .sanskara-wordmark {
+      text-shadow: 0 6px 24px rgba(43, 9, 22, 0.5);
+    }
+
+    /* Transisi Halus & Animasi */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .animate-float-slow {
+      animation: floatSlow 5s ease-in-out infinite;
+    }
+
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-in {
+      animation: fadeSlideUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+<body class="bg-ivory-100 text-burgundy-950 font-sans antialiased overflow-x-hidden selection:bg-burgundy-800 selection:text-ivory-50">
+
+  <!-- ===================================================================== -->
+  <!-- 1. NAVBAR STICKY GLASSMORPHISM BURGUNDY                               -->
+  <!-- ===================================================================== -->
+  <header id="navbar" class="sticky top-0 z-40 transition-all duration-300 bg-burgundy-950/92 backdrop-blur-md border-b border-gold-500/30 text-ivory-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo Resmi KKM Sanskara dalam Bingkai Kubah Champagne Sand -->
+        <a href="#beranda" class="flex items-center gap-3.5 group focus:outline-none">
+          <div class="w-12 h-13 rounded-t-full rounded-b-2xl logo-medallion-bg p-1 border-2 border-gold-500/80 shadow-md group-hover:shadow-gold-glow transition-all duration-300 flex items-center justify-center overflow-hidden shrink-0">
+            <img
+              src="LOGO KKM PNG.png"
+              alt="Logo Resmi KKM Sanskara"
+              class="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-105"
+              onerror="handleLogoFallback(this, 'w-10 h-10')"
+            />
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-serif font-bold text-base sm:text-lg tracking-wider text-ivory-50">KKM SANSKARA</span>
+            </div>
+            <p class="text-[10px] sm:text-xs font-semibold text-gold-400 tracking-[0.14em] uppercase">UIN MALANG • LP2M</p>
+          </div>
+        </a>
+
+        <!-- Navigasi Desktop -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-1.5" aria-label="Navigasi Utama">
+          <a href="#beranda" class="nav-link px-3 py-2 rounded-xl text-sm font-semibold text-gold-400 hover:bg-ivory-50/10 transition-colors">Beranda</a>
+          <a href="#filosofi" class="nav-link px-3 py-2 rounded-xl text-sm font-medium text-ivory-100/90 hover:text-gold-400 hover:bg-ivory-50/10 transition-colors">Filosofi & Logo</a>
+          <a href="#proker" class="nav-link px-3 py-2 rounded-xl text-sm font-medium text-ivory-100/90 hover:text-gold-400 hover:bg-ivory-50/10 transition-colors">Program Kerja</a>
+          <a href="#tim" class="nav-link px-3 py-2 rounded-xl text-sm font-medium text-ivory-100/90 hover:text-gold-400 hover:bg-ivory-50/10 transition-colors">Anggota Tim</a>
+          <a href="#linimasa" class="nav-link px-3 py-2 rounded-xl text-sm font-medium text-ivory-100/90 hover:text-gold-400 hover:bg-ivory-50/10 transition-colors">Linimasa</a>
+          <a href="#jurnal-galeri" class="nav-link px-3 py-2 rounded-xl text-sm font-medium text-ivory-100/90 hover:text-gold-400 hover:bg-ivory-50/10 transition-colors">Jurnal & Galeri</a>
+          <a href="#buku-tamu" class="nav-link px-3 py-2 rounded-xl text-sm font-medium text-ivory-100/90 hover:text-gold-400 hover:bg-ivory-50/10 transition-colors">Buku Tamu</a>
+        </nav>
+
+        <!-- Tombol Aksi Kanan & Mobile Toggle -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button onclick="openPoskoModal()" title="Atur Info Posko & DPL" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-gold-500/50 bg-burgundy-900/90 hover:bg-burgundy-800 text-ivory-50 text-xs font-semibold transition-all shadow-sm" aria-label="Atur Data Posko">
+            <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span class="hidden sm:inline">Atur Posko</span>
+          </button>
+
+          <a href="#kontak-resmi" class="hidden xl:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 hover:to-gold-500 text-burgundy-950 text-xs font-bold shadow-sm transition-all">
+            <span>@kkmsanskara</span>
+          </a>
+
+          <!-- Hamburger Mobile Button -->
+          <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl bg-burgundy-800 text-ivory-50 border border-gold-500/30 hover:bg-burgundy-700 transition-colors" aria-label="Buka Menu Navigasi" aria-expanded="false">
+            <svg id="icon-menu-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="icon-menu-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-burgundy-950 border-t border-gold-500/25 px-4 pt-3 pb-6 shadow-luxury-lg">
+      <div class="flex flex-col space-y-1.5">
+        <a href="#beranda" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-semibold text-gold-400 bg-ivory-50/10">Beranda</a>
+        <a href="#filosofi" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-ivory-100 hover:bg-ivory-50/10">Filosofi & Makna Logo</a>
+        <a href="#proker" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-ivory-100 hover:bg-ivory-50/10">Program Kerja</a>
+        <a href="#tim" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-ivory-100 hover:bg-ivory-50/10">Anggota Tim</a>
+        <a href="#linimasa" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-ivory-100 hover:bg-ivory-50/10">Linimasa Kegiatan</a>
+        <a href="#jurnal-galeri" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-ivory-100 hover:bg-ivory-50/10">Jurnal & Galeri</a>
+        <a href="#buku-tamu" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-ivory-100 hover:bg-ivory-50/10">Buku Tamu & Doa Restu</a>
+        <div class="pt-2 flex gap-2">
+          <button onclick="openPoskoModal()" class="flex-1 py-3 px-4 rounded-xl border border-gold-500/50 text-gold-400 text-xs font-bold">
+            ⚙ Atur Posko
+          </button>
+          <a href="#kontak-resmi" class="mobile-nav-link flex-1 flex items-center justify-center px-4 py-3 rounded-xl bg-gold-500 text-burgundy-950 text-xs font-bold">
+            @kkmsanskara
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- 2. HERO SECTION (2-KOLOM: NARASI + SHOWCASE LOGO KUBAH & COUNTDOWN)   -->
+  <!-- ===================================================================== -->
+  <section id="beranda" class="relative bg-batik-burgundy text-ivory-50 pt-10 pb-28 sm:pt-14 sm:pb-36 overflow-hidden">
+    <!-- Ornamen Pita Lengkung Pojok Kiri Atas & Kanan Bawah -->
+    <svg class="absolute top-0 left-0 w-64 sm:w-96 h-64 sm:h-96 text-burgundy-700/35 pointer-events-none" viewBox="0 0 300 300" fill="none">
+      <path d="M-40 20C60 120 180 110 260 -20C190 140 70 165 -40 75Z" fill="currentColor"/>
+      <path d="M-30 85C75 175 195 155 290 25C210 180 85 215 -30 135Z" fill="#882248" fill-opacity="0.3"/>
+    </svg>
+    <svg class="absolute bottom-12 right-0 w-72 sm:w-[440px] h-72 sm:h-[440px] text-burgundy-700/30 pointer-events-none" viewBox="0 0 300 300" fill="none">
+      <path d="M340 280C240 180 120 190 40 320C110 160 230 135 340 225Z" fill="currentColor"/>
+      <path d="M330 215C225 125 105 145 10 275C90 120 215 85 330 165Z" fill="#C69C5E" fill-opacity="0.16"/>
+    </svg>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <!-- KOLOM KIRI: Badge Resmi, Judul, Periode, Deskripsi, CTA, & Statistik Ringkas -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          <!-- Badge Institusi -->
+          <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2 px-4 py-2 rounded-full bg-burgundy-950/75 border border-gold-500/45 backdrop-blur-md mb-5 shadow-lg">
+            <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+            <span class="text-[11px] sm:text-xs font-bold tracking-[0.14em] uppercase text-ivory-100">
+              LP2M UIN MAULANA MALIK IBRAHIM MALANG
+            </span>
+          </div>
+
+          <p class="font-serif italic text-gold-400 text-lg sm:text-2xl mb-1 tracking-wide">
+            Kuliah Kerja Mahasiswa • Mengabdi & Mengukir Makna
+          </p>
+
+          <h1 class="my-2 select-none">
+            <span class="flex items-baseline justify-center lg:justify-start leading-none sanskara-wordmark">
+              <span class="sanskara-script-s text-7xl sm:text-8xl xl:text-9xl text-ivory-50 -mr-2 sm:-mr-3 transform -rotate-6 inline-block">S</span>
+              <span class="font-serif font-extrabold text-5xl sm:text-7xl xl:text-8xl tracking-[0.06em] text-ivory-50">ANSKARA</span>
+            </span>
+          </h1>
+
+          <!-- Pill Periode & Posko -->
+          <div class="mt-5 flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-burgundy-850 border border-gold-400/50 shadow-md">
+              <svg class="w-4 h-4 text-gold-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span class="text-xs sm:text-sm font-bold tracking-wider uppercase text-ivory-50">
+                28 Desember 2026 – 04 Februari 2027
+              </span>
+            </div>
+
+            <button onclick="openPoskoModal()" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-burgundy-950/65 hover:bg-burgundy-950 border border-ivory-50/25 text-xs font-medium text-ivory-100 transition-all">
+              <svg class="w-3.5 h-3.5 text-gold-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span id="hero-posko-label">Posko: Kabupaten Malang, Jawa Timur</span>
+            </button>
+          </div>
+
+          <p class="mt-5 max-w-2xl mx-auto lg:mx-0 text-sm sm:text-base text-ivory-200/90 leading-relaxed">
+            Sinergi 15 mahasiswa lintas fakultas UIN Maulana Malik Ibrahim Malang dalam menghadirkan pemberdayaan desa berkelanjutan di bidang pendidikan & literasi, ekonomi kreatif UMKM, kesehatan lingkungan, serta sosial keagamaan.
+          </p>
+
+          <!-- Tombol Aksi -->
+          <div class="mt-7 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
+            <a href="#proker" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 hover:to-gold-500 text-burgundy-950 font-bold text-sm shadow-gold-glow transition-all transform hover:-translate-y-0.5">
+              <span>Lihat 10 Program Kerja</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+            <a href="#filosofi" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-burgundy-950/65 hover:bg-burgundy-950 text-ivory-50 border border-ivory-50/30 font-semibold text-sm backdrop-blur-sm transition-all">
+              <span>Filosofi & Makna Logo</span>
+            </a>
+          </div>
+
+          <!-- 4 Statistik Ringkas Terpadu -->
+          <div class="mt-9 grid grid-cols-2 sm:grid-cols-4 gap-3 pt-7 border-t border-ivory-50/15">
+            <div class="bg-burgundy-950/55 border border-gold-500/25 rounded-2xl p-3.5 text-center lg:text-left">
+              <div class="font-serif font-extrabold text-xl sm:text-2xl text-gold-400">40 Hari</div>
+              <div class="text-[11px] font-medium text-ivory-200/85 mt-0.5">Masa Pengabdian</div>
+            </div>
+            <div class="bg-burgundy-950/55 border border-gold-500/25 rounded-2xl p-3.5 text-center lg:text-left">
+              <div class="font-serif font-extrabold text-xl sm:text-2xl text-gold-400">10 Proker</div>
+              <div class="text-[11px] font-medium text-ivory-200/85 mt-0.5">Program Kerja</div>
+            </div>
+            <div class="bg-burgundy-950/55 border border-gold-500/25 rounded-2xl p-3.5 text-center lg:text-left">
+              <div class="font-serif font-extrabold text-xl sm:text-2xl text-gold-400">4 Pilar</div>
+              <div class="text-[11px] font-medium text-ivory-200/85 mt-0.5">Pilar Utama</div>
+            </div>
+            <div class="bg-burgundy-950/55 border border-gold-500/25 rounded-2xl p-3.5 text-center lg:text-left">
+              <div class="font-serif font-extrabold text-xl sm:text-2xl text-gold-400">15 Mhs</div>
+              <div class="text-[11px] font-medium text-ivory-200/85 mt-0.5">Lintas Fakultas</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KOLOM KANAN: KARTU SHOWCASE KUBAH LOGO RESMI + WIDGET COUNTDOWN -->
+        <div class="lg:col-span-5 flex flex-col items-center">
+          <div class="w-full max-w-md bg-burgundy-950/60 backdrop-blur-md p-4 sm:p-5 rounded-[36px] border border-gold-500/45 shadow-luxury-lg">
+            <!-- Bingkai Kubah / Arch Champagne Sand Bertepi Emas -->
+            <div class="relative rounded-t-[160px] rounded-b-3xl logo-medallion-bg border-2 border-gold-500 p-6 sm:p-8 flex flex-col items-center justify-center overflow-hidden">
+              <!-- Garis Ornamen Dalam Tipis -->
+              <div class="absolute inset-2.5 rounded-t-[150px] rounded-b-2xl border border-burgundy-850/20 pointer-events-none"></div>
+
+              <span class="relative z-10 px-3 py-1 rounded-full bg-burgundy-850/10 border border-burgundy-850/25 text-burgundy-900 text-[10px] font-bold uppercase tracking-[0.2em] mb-3">
+                Identitas Resmi Kelompok
+              </span>
+
+              <!-- LOGO RESMI KKM SANSKARA ('LOGO KKM PNG.png') -->
+              <div class="relative z-10 w-48 h-52 sm:w-56 sm:h-60 flex items-center justify-center animate-float-slow">
+                <img
+                  src="LOGO KKM PNG.png"
+                  alt="Logo Resmi KKM Sanskara"
+                  class="w-full h-full object-contain drop-shadow-md"
+                  onerror="handleLogoFallback(this, 'w-full h-full')"
+                />
+              </div>
+
+              <p class="relative z-10 text-[11px] font-serif italic text-burgundy-900/85 mt-2 text-center">
+                “Saṃskāra — Jejak Pengabdian yang Membekas”
+              </p>
+            </div>
+
+            <!-- WIDGET HITUNG MUNDUR REAL-TIME MENUJU 28 DESEMBER 2026 -->
+            <div class="mt-4 bg-ivory-50 text-burgundy-950 rounded-2xl p-4 border border-gold-500/60 shadow-md">
+              <div class="flex items-center justify-between mb-2.5">
+                <p id="countdown-caption" class="text-[11px] font-bold uppercase tracking-[0.15em] text-burgundy-850">
+                  Hitung Mundur Penerjunan
+                </p>
+                <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-burgundy-100 text-burgundy-850">28 Des 2026</span>
+              </div>
+              <div class="grid grid-cols-4 gap-2 text-center">
+                <div class="bg-ivory-100 rounded-xl py-2 px-1 border border-ivory-300">
+                  <div id="cd-days" class="font-serif font-extrabold text-xl sm:text-2xl text-burgundy-900 tabular-nums">00</div>
+                  <div class="text-[9px] font-bold uppercase tracking-widest text-taupe">Hari</div>
+                </div>
+                <div class="bg-ivory-100 rounded-xl py-2 px-1 border border-ivory-300">
+                  <div id="cd-hours" class="font-serif font-extrabold text-xl sm:text-2xl text-burgundy-900 tabular-nums">00</div>
+                  <div class="text-[9px] font-bold uppercase tracking-widest text-taupe">Jam</div>
+                </div>
+                <div class="bg-ivory-100 rounded-xl py-2 px-1 border border-ivory-300">
+                  <div id="cd-minutes" class="font-serif font-extrabold text-xl sm:text-2xl text-burgundy-900 tabular-nums">00</div>
+                  <div class="text-[9px] font-bold uppercase tracking-widest text-taupe">Menit</div>
+                </div>
+                <div class="bg-ivory-100 rounded-xl py-2 px-1 border border-ivory-300">
+                  <div id="cd-seconds" class="font-serif font-extrabold text-xl sm:text-2xl text-burgundy-700 tabular-nums">00</div>
+                  <div class="text-[9px] font-bold uppercase tracking-widest text-taupe">Detik</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GELOMBANG TRANSISI ORGANIK (SVG WAVE) BURGUNDY -> IVORY -->
+    <div class="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none pointer-events-none">
+      <svg class="relative block w-full h-12 sm:h-20" viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0,45 C320,105 620,0 960,55 C1180,90 1340,65 1440,35 L1440,100 L0,100 Z" fill="#C69C5E" fill-opacity="0.28"></path>
+        <path d="M0,62 C360,115 720,12 1080,68 C1260,96 1380,74 1440,52 L1440,100 L0,100 Z" fill="#FAF6F0"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 3. TENTANG, FILOSOFI NAMA & BEDAH MAKNA LOGO RESMI SANSKARA           -->
+  <!-- ===================================================================== -->
+  <section id="filosofi" class="py-16 sm:py-24 bg-batik-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header Bagian -->
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-burgundy-100 text-burgundy-850 text-xs font-bold uppercase tracking-[0.18em] mb-3">
+          Identitas & Simbolisme Luhur
+        </span>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-burgundy-900 leading-tight">
+          Filosofi Nama & Makna Logo <span class="font-script text-5xl sm:text-6xl text-burgundy-700 font-normal ml-1">Sanskara</span>
+        </h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-burgundy-850 via-gold-500 to-burgundy-850 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <!-- Grid Utama: Kartu Besar Logo Resmi (Kiri) + Bedah 4 Elemen Logo (Kanan) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-16">
+        <!-- Kartu Showcase Besar Logo Resmi & Etimologi Sanskara (5 Kolom) -->
+        <div class="lg:col-span-5 bg-ivory-50 rounded-3xl p-6 sm:p-8 border border-ivory-300 shadow-luxury flex flex-col justify-between">
+          <div>
+            <!-- Bingkai Medali Champagne Sand untuk Logo -->
+            <div class="rounded-3xl logo-medallion-bg border-2 border-gold-500/85 p-6 sm:p-8 flex flex-col items-center justify-center relative overflow-hidden mb-6">
+              <div class="absolute inset-2 rounded-2xl border border-burgundy-850/15 pointer-events-none"></div>
+              <div class="w-52 h-56 sm:w-60 sm:h-64 flex items-center justify-center">
+                <img
+                  src="LOGO KKM PNG.png"
+                  alt="Logo Resmi KKM Sanskara"
+                  class="w-full h-full object-contain drop-shadow"
+                  onerror="handleLogoFallback(this, 'w-full h-full')"
+                />
+              </div>
+              <div class="mt-2 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-burgundy-900 text-ivory-50 text-[10px] font-bold uppercase tracking-widest">
+                <span>Lambang Resmi KKM Sanskara</span>
+              </div>
+            </div>
+
+            <h3 class="font-serif font-bold text-xl sm:text-2xl text-burgundy-900 mb-2">
+              Etimologi “Sanskara” (Saṃskāra)
+            </h3>
+            <p class="text-taupe text-sm leading-relaxed">
+              Dalam bahasa Sanskerta, <strong class="text-burgundy-900">Sanskara</strong> berarti <em>penyempurnaan budi pekerti, jejak kebaikan yang membekas dalam jiwa, serta pemuliaan berkelanjutan</em>. KKM Sanskara hadir untuk meninggalkan warisan manfaat nyata yang menyatu dengan kearifan lokal masyarakat desa.
+            </p>
+          </div>
+
+          <!-- Palet Warna Resmi -->
+          <div class="grid grid-cols-3 gap-2.5 pt-5 mt-5 border-t border-ivory-200">
+            <div class="p-2.5 rounded-xl bg-burgundy-850 text-ivory-50 text-center">
+              <div class="text-[10px] font-bold text-gold-400 uppercase">Burgundy</div>
+              <div class="text-[10px] text-ivory-200 mt-0.5">#711625</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-ivory-150 text-burgundy-950 border border-ivory-300 text-center">
+              <div class="text-[10px] font-bold text-burgundy-850 uppercase">Warm Ivory</div>
+              <div class="text-[10px] text-taupe mt-0.5">#FCF9EE</div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-sand-200 text-burgundy-950 border border-gold-500/50 text-center">
+              <div class="text-[10px] font-bold text-gold-600 uppercase">Gold Sand</div>
+              <div class="text-[10px] text-taupe mt-0.5">#C69C5E</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bedah Makna 4 Elemen Visual Logo (7 Kolom) -->
+        <div class="lg:col-span-7 flex flex-col justify-between space-y-4">
+          <div class="bg-gradient-to-r from-burgundy-900 to-burgundy-850 text-ivory-50 rounded-3xl p-6 sm:p-7 shadow-luxury">
+            <span class="text-xs font-bold uppercase tracking-[0.18em] text-gold-400">Anatomi Simbolik</span>
+            <h3 class="font-serif font-bold text-2xl sm:text-3xl text-ivory-50 mt-1">
+              Empat Elemen Utama Logo KKM Sanskara
+            </h3>
+            <p class="text-xs sm:text-sm text-ivory-200/90 mt-1.5">
+              Setiap garis, lekuk daun, dan perpaduan warna Deep Burgundy serta Warm Ivory merepresentasikan falsafah pengabdian Ulul Albab UIN Maulana Malik Ibrahim Malang.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
+            <!-- Elemen 1 -->
+            <div class="bg-ivory-50 rounded-3xl p-6 border border-ivory-300 hover:border-burgundy-850/50 shadow-sm hover:shadow-luxury transition-all">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-burgundy-850 text-gold-400 flex items-center justify-center font-serif font-bold text-base shrink-0">
+                  01
+                </div>
+                <h4 class="font-serif font-bold text-lg text-burgundy-900 leading-snug">
+                  Surya Utama
+                </h4>
+              </div>
+              <p class="text-[11px] font-bold uppercase tracking-wider text-gold-600 mb-2">
+                Matahari Burgundy & Sinar Ivory
+              </p>
+              <p class="text-xs sm:text-sm text-taupe leading-relaxed">
+                Semangat pencerahan ilmu <em>Ulul Albab</em> dan harapan baru bagi masyarakat desa—menyinari potensi lokal melalui transfer pengetahuan yang hangat dan membumi.
+              </p>
+            </div>
+
+            <!-- Elemen 2 -->
+            <div class="bg-ivory-50 rounded-3xl p-6 border border-ivory-300 hover:border-burgundy-850/50 shadow-sm hover:shadow-luxury transition-all">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-burgundy-850 text-gold-400 flex items-center justify-center font-serif font-bold text-base shrink-0">
+                  02
+                </div>
+                <h4 class="font-serif font-bold text-lg text-burgundy-900 leading-snug">
+                  Tunas & Tiga Helai Daun
+                </h4>
+              </div>
+              <p class="text-[11px] font-bold uppercase tracking-wider text-gold-600 mb-2">
+                Daun Ivory Tegak, Kiri & Daun Burgundy
+              </p>
+              <p class="text-xs sm:text-sm text-taupe leading-relaxed">
+                Pertumbuhan berkelanjutan yang memadukan tiga aspek utama: kematangan intelektual, kedalaman spiritual, serta kemandirian sosial-ekonomi masyarakat.
+              </p>
+            </div>
+
+            <!-- Elemen 3 -->
+            <div class="bg-ivory-50 rounded-3xl p-6 border border-ivory-300 hover:border-burgundy-850/50 shadow-sm hover:shadow-luxury transition-all">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-burgundy-850 text-gold-400 flex items-center justify-center font-serif font-bold text-base shrink-0">
+                  03
+                </div>
+                <h4 class="font-serif font-bold text-lg text-burgundy-900 leading-snug">
+                  Simpul Anyaman Harmoni
+                </h4>
+              </div>
+              <p class="text-[11px] font-bold uppercase tracking-wider text-gold-600 mb-2">
+                Jalinan Pita S Burgundy & Kelopak Ivory
+              </p>
+              <p class="text-xs sm:text-sm text-taupe leading-relaxed">
+                Sinergi erat antara mahasiswa UIN Malang, perangkat desa, dan seluruh warga dalam ikatan gotong royong yang saling menguatkan tanpa sekat.
+              </p>
+            </div>
+
+            <!-- Elemen 4 -->
+            <div class="bg-ivory-50 rounded-3xl p-6 border border-ivory-300 hover:border-burgundy-850/50 shadow-sm hover:shadow-luxury transition-all">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-burgundy-850 text-gold-400 flex items-center justify-center font-serif font-bold text-base shrink-0">
+                  04
+                </div>
+                <h4 class="font-serif font-bold text-lg text-burgundy-900 leading-snug">
+                  Aksara Sanskara
+                </h4>
+              </div>
+              <p class="text-[11px] font-bold uppercase tracking-wider text-gold-600 mb-2">
+                Tipografi Serif Ukir Melengkung
+              </p>
+              <p class="text-xs sm:text-sm text-taupe leading-relaxed">
+                Jejak pengabdian yang berbudaya, berkarakter kokoh, dan meninggalkan manfaat jangka panjang yang terus hidup setelah masa KKM usai.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 PILAR PROGRAM KERJA INTERAKTIF -->
+      <div>
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-2">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[0.18em] text-burgundy-850">Fokus Aksi Lapangan</span>
+            <h3 class="font-serif font-bold text-2xl sm:text-3xl text-burgundy-900 mt-1">Empat Pilar Program Kerja</h3>
+          </div>
+          <p class="text-sm text-taupe">Klik pilar di bawah untuk langsung memfilter daftar program kerja.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- Pilar 1 -->
+          <button onclick="jumpToProkerCategory('Pendidikan & Literasi')" class="text-left group bg-ivory-50 hover:bg-burgundy-900 rounded-3xl p-6 border border-ivory-300 hover:border-burgundy-900 shadow-sm hover:shadow-luxury-lg transition-all duration-300">
+            <div class="w-12 h-12 rounded-2xl bg-burgundy-100 group-hover:bg-gold-500 text-burgundy-850 group-hover:text-burgundy-950 flex items-center justify-center mb-5 transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-gold-600 group-hover:text-gold-400">Pilar 01</span>
+            <h4 class="font-serif font-bold text-lg text-burgundy-900 group-hover:text-ivory-50 mt-1 mb-2">Pendidikan & Literasi</h4>
+            <p class="text-xs sm:text-sm text-taupe group-hover:text-ivory-200 leading-relaxed">
+              Rumah Belajar Sanskara, bimbingan literasi-numerasi anak SD/MI, serta kelas bahasa kreatif.
+            </p>
+          </button>
+
+          <!-- Pilar 2 -->
+          <button onclick="jumpToProkerCategory('Ekonomi Kreatif & UMKM')" class="text-left group bg-ivory-50 hover:bg-burgundy-900 rounded-3xl p-6 border border-ivory-300 hover:border-burgundy-900 shadow-sm hover:shadow-luxury-lg transition-all duration-300">
+            <div class="w-12 h-12 rounded-2xl bg-burgundy-100 group-hover:bg-gold-500 text-burgundy-850 group-hover:text-burgundy-950 flex items-center justify-center mb-5 transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-gold-600 group-hover:text-gold-400">Pilar 02</span>
+            <h4 class="font-serif font-bold text-lg text-burgundy-900 group-hover:text-ivory-50 mt-1 mb-2">Ekonomi Kreatif & UMKM</h4>
+            <p class="text-xs sm:text-sm text-taupe group-hover:text-ivory-200 leading-relaxed">
+              Rebranding kemasan produk lokal, katalog digital QR, dan inkubasi wirausaha pemuda desa.
+            </p>
+          </button>
+
+          <!-- Pilar 3 -->
+          <button onclick="jumpToProkerCategory('Kesehatan & Lingkungan')" class="text-left group bg-ivory-50 hover:bg-burgundy-900 rounded-3xl p-6 border border-ivory-300 hover:border-burgundy-900 shadow-sm hover:shadow-luxury-lg transition-all duration-300">
+            <div class="w-12 h-12 rounded-2xl bg-burgundy-100 group-hover:bg-gold-500 text-burgundy-850 group-hover:text-burgundy-950 flex items-center justify-center mb-5 transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-gold-600 group-hover:text-gold-400">Pilar 03</span>
+            <h4 class="font-serif font-bold text-lg text-burgundy-900 group-hover:text-ivory-50 mt-1 mb-2">Kesehatan & Lingkungan</h4>
+            <p class="text-xs sm:text-sm text-taupe group-hover:text-ivory-200 leading-relaxed">
+              Edukasi cegah stunting, Posyandu remaja, Bank Sampah dusun, serta produksi Eco-Enzyme.
+            </p>
+          </button>
+
+          <!-- Pilar 4 -->
+          <button onclick="jumpToProkerCategory('Sosial Keagamaan & Digitalisasi')" class="text-left group bg-ivory-50 hover:bg-burgundy-900 rounded-3xl p-6 border border-ivory-300 hover:border-burgundy-900 shadow-sm hover:shadow-luxury-lg transition-all duration-300">
+            <div class="w-12 h-12 rounded-2xl bg-burgundy-100 group-hover:bg-gold-500 text-burgundy-850 group-hover:text-burgundy-950 flex items-center justify-center mb-5 transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-gold-600 group-hover:text-gold-400">Pilar 04</span>
+            <h4 class="font-serif font-bold text-lg text-burgundy-900 group-hover:text-ivory-50 mt-1 mb-2">Sosial Keagamaan & Digitalisasi</h4>
+            <p class="text-xs sm:text-sm text-taupe group-hover:text-ivory-200 leading-relaxed">
+              Penguatan TPQ, kajian moderasi beragama, profil digital desa berbasis web, serta Expo Karya.
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PEMISAH ORNAMEN ELEGAN -->
+  <div class="bg-ivory-200/70 border-y border-ivory-300 py-4 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-center gap-4 text-burgundy-800/70 text-xs font-serif tracking-[0.25em] uppercase">
+      <span>✦ ULUL ALBAB</span>
+      <span class="text-gold-600">•</span>
+      <span>KKM SANSKARA 2026/2027</span>
+      <span class="text-gold-600">•</span>
+      <span class="hidden sm:inline">BERDAYA BERSAMA MASYARAKAT ✦</span>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 4. DIREKTORI PROGRAM KERJA (PROKER) DENGAN FILTER & MODAL DETAIL      -->
+  <!-- ===================================================================== -->
+  <section id="proker" class="py-20 sm:py-28 bg-ivory-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-burgundy-100 text-burgundy-800 text-xs font-bold uppercase tracking-[0.18em] mb-3">
+          Rencana Aksi Nyata
+        </span>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-burgundy-900">
+          Direktori Program Kerja
+        </h2>
+        <p class="text-sm sm:text-base text-taupe mt-3">
+          Rangkaian program pengabdian terukur yang dirancang bersama masyarakat untuk memberikan dampak jangka panjang. Klik kartu untuk membaca rincian pelaksanaan.
+        </p>
+      </div>
+
+      <!-- Kontrol Filter Kategori & Pencarian -->
+      <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-10 bg-ivory-50 p-4 rounded-3xl border border-ivory-300 shadow-sm">
+        <div id="proker-filters" class="flex flex-wrap items-center gap-2">
+          <button data-category="Semua" class="proker-filter-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-burgundy-900 text-ivory-50 transition-all">
+            Semua (10)
+          </button>
+          <button data-category="Unggulan" class="proker-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-100 text-burgundy-900 hover:bg-burgundy-100 transition-all">
+            ★ Unggulan
+          </button>
+          <button data-category="Pendidikan & Literasi" class="proker-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-100 text-burgundy-900 hover:bg-burgundy-100 transition-all">
+            Pendidikan & Literasi
+          </button>
+          <button data-category="Ekonomi Kreatif & UMKM" class="proker-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-100 text-burgundy-900 hover:bg-burgundy-100 transition-all">
+            Ekonomi Kreatif & UMKM
+          </button>
+          <button data-category="Kesehatan & Lingkungan" class="proker-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-100 text-burgundy-900 hover:bg-burgundy-100 transition-all">
+            Kesehatan & Lingkungan
+          </button>
+          <button data-category="Sosial Keagamaan & Digitalisasi" class="proker-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-100 text-burgundy-900 hover:bg-burgundy-100 transition-all">
+            Sosial Keagamaan & Digitalisasi
+          </button>
+        </div>
+
+        <!-- Input Pencarian Cepat -->
+        <div class="relative w-full lg:w-72">
+          <input id="proker-search" type="text" placeholder="Cari program kerja..." class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-ivory-100 border border-ivory-300 text-sm text-burgundy-950 placeholder-taupe/70 focus:outline-none focus:border-burgundy-800 focus:ring-2 focus:ring-burgundy-800/15" />
+          <svg class="w-4 h-4 text-taupe absolute left-3.5 top-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Grid Kartu Program Kerja (Di-render via JS) -->
+      <div id="proker-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <!-- Empty State jika pencarian kosong -->
+      <div id="proker-empty" class="hidden text-center py-14 bg-ivory-50 rounded-3xl border border-ivory-300">
+        <p class="font-serif font-bold text-xl text-burgundy-900">Program kerja tidak ditemukan</p>
+        <p class="text-sm text-taupe mt-1">Coba kata kunci lain atau pilih kategori "Semua".</p>
+        <button onclick="resetProkerFilter()" class="mt-4 px-5 py-2.5 rounded-xl bg-burgundy-900 text-ivory-50 text-xs font-semibold">Reset Filter</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 5. STRUKTUR ORGANISASI & DIREKTORI ANGGOTA TIM                        -->
+  <!-- ===================================================================== -->
+  <section id="tim" class="py-20 sm:py-28 bg-ivory-200/55 border-t border-ivory-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header Bagian -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div class="max-w-2xl">
+          <span class="inline-block px-3.5 py-1 rounded-full bg-burgundy-900 text-gold-400 text-xs font-bold uppercase tracking-[0.18em] mb-3">
+            Sumber Daya Pengabdi
+          </span>
+          <h2 class="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-burgundy-900">
+            Struktur & Anggota Tim
+          </h2>
+          <p class="text-sm sm:text-base text-taupe mt-3">
+            Kolaborasi 15 mahasiswa lintas program studi UIN Maulana Malik Ibrahim Malang yang bersatu dalam semangat pengabdian KKM Sanskara.
+          </p>
+        </div>
+
+        <!-- Info DPL & Tombol Sesuaikan Data Posko -->
+        <div class="bg-ivory-50 rounded-2xl p-4 sm:p-5 border border-ivory-300 shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-gold-600">Dosen Pembimbing Lapangan</div>
+            <div id="dpl-display-name" class="font-serif font-bold text-base text-burgundy-900 mt-0.5">Dr. H. Ahmad Muzakki, M.Ag.</div>
+            <div id="desa-display-sub" class="text-xs text-taupe">LP2M UIN Maulana Malik Ibrahim Malang</div>
+          </div>
+          <button onclick="openPoskoModal()" class="px-3.5 py-2 rounded-xl bg-burgundy-100 hover:bg-burgundy-900 text-burgundy-900 hover:text-ivory-50 text-xs font-bold transition-colors shrink-0">
+            Sesuaikan Posko
+          </button>
+        </div>
+      </div>
+
+      <!-- Filter Divisi -->
+      <div id="team-filters" class="flex flex-wrap items-center gap-2 mb-9">
+        <button data-division="Semua" class="team-filter-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-burgundy-900 text-ivory-50 transition-all">
+          Semua Anggota (15)
+        </button>
+        <button data-division="BPH" class="team-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-50 text-burgundy-900 border border-ivory-300 hover:bg-burgundy-100 transition-all">
+          BPH
+        </button>
+        <button data-division="Acara & Pendidikan" class="team-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-50 text-burgundy-900 border border-ivory-300 hover:bg-burgundy-100 transition-all">
+          Acara & Pendidikan
+        </button>
+        <button data-division="Humas & Kemitraan" class="team-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-50 text-burgundy-900 border border-ivory-300 hover:bg-burgundy-100 transition-all">
+          Humas & Kemitraan
+        </button>
+        <button data-division="PDD" class="team-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-50 text-burgundy-900 border border-ivory-300 hover:bg-burgundy-100 transition-all">
+          PDD
+        </button>
+        <button data-division="Kesehatan & Lingkungan" class="team-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-50 text-burgundy-900 border border-ivory-300 hover:bg-burgundy-100 transition-all">
+          Kesehatan & Lingkungan
+        </button>
+        <button data-division="Perlengkapan & Konsumsi" class="team-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-50 text-burgundy-900 border border-ivory-300 hover:bg-burgundy-100 transition-all">
+          Perlengkapan & Konsumsi
+        </button>
+      </div>
+
+      <!-- Grid Anggota Tim (Di-render via JS) -->
+      <div id="team-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5"></div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 6. LINIMASA (TIMELINE) KEGIATAN (28 DES 2026 – 04 FEB 2027)           -->
+  <!-- ===================================================================== -->
+  <section id="linimasa" class="py-24 sm:py-32 bg-batik-burgundy text-ivory-50 relative overflow-hidden">
+    <!-- Gelombang Transisi Atas (Ivory -> Burgundy) -->
+    <div class="absolute top-0 left-0 right-0 w-full overflow-hidden leading-none pointer-events-none">
+      <svg class="relative block w-full h-10 sm:h-16" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,0 L1440,0 L1440,32 C1120,82 760,8 420,54 C210,80 90,56 0,28 Z" fill="#F5EFE6"></path>
+      </svg>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <!-- Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-ivory-50/10 border border-gold-400/40 text-gold-400 text-xs font-bold uppercase tracking-[0.18em] mb-3">
+          Peta Jalan Pengabdian
+        </span>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-ivory-50">
+          Linimasa Kegiatan KKM
+        </h2>
+        <p class="text-sm sm:text-base text-ivory-200/90 mt-3">
+          Tahapan terstruktur mulai dari masa persiapan pra-penerjunan hingga penarikan resmi pada 04 Februari 2027.
+        </p>
+      </div>
+
+      <!-- Timeline Vertical & Alternating -->
+      <div class="relative">
+        <!-- Garis Tengah -->
+        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-gold-400 via-ivory-50/35 to-gold-400"></div>
+        <div class="md:hidden absolute left-5 top-0 h-full w-0.5 bg-gold-400/50"></div>
+
+        <div id="timeline-container" class="space-y-8 md:space-y-12"></div>
+      </div>
+    </div>
+
+    <!-- Gelombang Transisi Bawah (Burgundy -> Ivory) -->
+    <div class="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none pointer-events-none">
+      <svg class="relative block w-full h-10 sm:h-16" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,42 C340,92 680,10 1040,56 C1240,80 1360,58 1440,34 L1440,80 L0,80 Z" fill="#FAF6F0"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 7. KABAR PENGABDIAN (JURNAL KEGIATAN) & GALERI DOKUMENTASI            -->
+  <!-- ===================================================================== -->
+  <section id="jurnal-galeri" class="py-20 sm:py-28 bg-batik-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Bagian A: Kabar Pengabdian / Jurnal Kegiatan -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-burgundy-100 text-burgundy-850 text-xs font-bold uppercase tracking-[0.18em] mb-3">
+          Catatan & Refleksi
+        </span>
+        <h2 class="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-burgundy-900">
+          Jurnal Pengabdian Sanskara
+        </h2>
+        <p class="text-sm sm:text-base text-taupe mt-3">
+          Tulisan refleksi, catatan observasi sosial, serta dokumentasi gagasan pemberdayaan dari tim KKM Sanskara.
+        </p>
+      </div>
+
+      <!-- Grid Artikel Jurnal (Di-render via JS) -->
+      <div id="journal-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24"></div>
+
+      <!-- Bagian B: Galeri Dokumentasi & Lightbox -->
+      <div class="pt-16 border-t border-ivory-300">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+          <div>
+            <span class="inline-block px-3.5 py-1 rounded-full bg-burgundy-900 text-gold-400 text-xs font-bold uppercase tracking-[0.18em] mb-3">
+              Arsip Visual
+            </span>
+            <h3 class="font-serif font-bold text-3xl sm:text-4xl text-burgundy-900">
+              Galeri Dokumentasi
+            </h3>
+            <p class="text-sm text-taupe mt-2">
+              Rekaman visual persiapan, survei lokasi, dan kebersamaan tim bersama masyarakat. Klik foto untuk memperbesar.
+            </p>
+          </div>
+
+          <!-- Filter Galeri -->
+          <div class="flex flex-wrap items-center gap-2">
+            <button data-gal="Semua" class="gal-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-burgundy-900 text-ivory-50 transition-all">
+              Semua Foto
+            </button>
+            <button data-gal="Persiapan" class="gal-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-50 text-burgundy-900 border border-ivory-300 hover:bg-burgundy-100 transition-all">
+              Persiapan
+            </button>
+            <button data-gal="Masyarakat" class="gal-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-50 text-burgundy-900 border border-ivory-300 hover:bg-burgundy-100 transition-all">
+              Masyarakat
+            </button>
+            <button data-gal="Tim" class="gal-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-ivory-50 text-burgundy-900 border border-ivory-300 hover:bg-burgundy-100 transition-all">
+              Tim Sanskara
+            </button>
+          </div>
+        </div>
+
+        <!-- Grid Galeri (Di-render via JS) -->
+        <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 8. BUKU TAMU, DOA RESTU & KONTAK RESMI (@KKMSANSKARA)                 -->
+  <!-- ===================================================================== -->
+  <section id="buku-tamu" class="py-20 sm:py-28 bg-ivory-200/60 border-t border-ivory-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <!-- KOLOM KIRI (7 KOLOM): FORM & PAPAN BUKU TAMU -->
+        <div class="lg:col-span-7 space-y-6">
+          <div>
+            <span class="inline-block px-3.5 py-1 rounded-full bg-burgundy-100 text-burgundy-850 text-xs font-bold uppercase tracking-[0.18em] mb-3">
+              Papan Apresiasi & Dukungan
+            </span>
+            <h2 class="font-serif font-bold text-3xl sm:text-4xl text-burgundy-900">
+              Buku Tamu & Doa Restu
+            </h2>
+            <p class="text-sm text-taupe mt-2">
+              Tuliskan pesan semangat, saran kolaborasi, atau doa restu untuk perjalanan pengabdian KKM Sanskara.
+            </p>
+          </div>
+
+          <!-- Form Kirim Pesan -->
+          <form id="guestbook-form" class="bg-ivory-50 rounded-3xl p-6 sm:p-7 border border-ivory-300 shadow-luxury space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="gb-name" class="block text-xs font-bold uppercase tracking-wider text-burgundy-900 mb-1.5">Nama Lengkap</label>
+                <input id="gb-name" type="text" required placeholder="Contoh: Dr. H. Ahmad Muzakki" class="w-full px-4 py-2.5 rounded-xl bg-ivory-100 border border-ivory-300 text-sm text-burgundy-950 placeholder-taupe/60 focus:outline-none focus:border-burgundy-800" />
+              </div>
+              <div>
+                <label for="gb-role" class="block text-xs font-bold uppercase tracking-wider text-burgundy-900 mb-1.5">Peran / Instansi</label>
+                <select id="gb-role" class="w-full px-4 py-2.5 rounded-xl bg-ivory-100 border border-ivory-300 text-sm text-burgundy-950 focus:outline-none focus:border-burgundy-800">
+                  <option value="Warga & Masyarakat Desa">Warga & Masyarakat Desa</option>
+                  <option value="Perangkat Desa">Perangkat Desa</option>
+                  <option value="Dosen Pembimbing Lapangan">Dosen Pembimbing Lapangan</option>
+                  <option value="Karang Taruna / Pemuda">Karang Taruna / Pemuda</option>
+                  <option value="Mahasiswa / Sahabat Sanskara">Mahasiswa / Sahabat Sanskara</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="gb-message" class="block text-xs font-bold uppercase tracking-wider text-burgundy-900 mb-1.5">Pesan & Doa Restu</label>
+              <textarea id="gb-message" rows="3" required placeholder="Tuliskan pesan dukungan atau saran program untuk tim KKM Sanskara..." class="w-full px-4 py-2.5 rounded-xl bg-ivory-100 border border-ivory-300 text-sm text-burgundy-950 placeholder-taupe/60 focus:outline-none focus:border-burgundy-800"></textarea>
+            </div>
+
+            <div class="flex items-center justify-between pt-1">
+              <span class="text-xs text-taupe">
+                Total Pesan: <strong id="gb-count" class="text-burgundy-900">3</strong>
+              </span>
+              <button type="submit" class="px-6 py-3 rounded-xl bg-burgundy-900 hover:bg-burgundy-800 text-ivory-50 text-xs sm:text-sm font-bold shadow-md transition-all">
+                Kirim Pesan Restu ✦
+              </button>
+            </div>
+          </form>
+
+          <!-- Daftar Pesan Buku Tamu (Di-render via JS) -->
+          <div id="guestbook-list" class="space-y-4 max-h-[460px] overflow-y-auto pr-1"></div>
+        </div>
+
+        <!-- KOLOM KANAN (5 KOLOM): KARTU KONTAK RESMI & MEDIA SOSIAL -->
+        <div id="kontak-resmi" class="lg:col-span-5">
+          <div class="bg-batik-burgundy text-ivory-50 rounded-3xl p-7 sm:p-8 border-2 border-gold-500/50 shadow-luxury-lg space-y-6">
+            <div>
+              <span class="inline-block px-3 py-1 rounded-full bg-gold-500 text-burgundy-950 text-[11px] font-bold uppercase tracking-widest mb-3">
+                Kanal Komunikasi Resmi
+              </span>
+              <h3 class="font-serif font-bold text-2xl sm:text-3xl text-ivory-50">
+                Terhubung dengan KKM Sanskara
+              </h3>
+              <p class="text-xs sm:text-sm text-ivory-200/90 mt-2 leading-relaxed">
+                Ikuti perkembangan harian, dokumentasi kegiatan, serta informasi kemitraan program kerja melalui kanal resmi kami.
+              </p>
+            </div>
+
+            <!-- Lokasi Posko Aktif -->
+            <div class="p-4 rounded-2xl bg-burgundy-950/70 border border-gold-500/35">
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400 block">Lokasi Posko Pengabdian</span>
+                  <p id="contact-posko-address" class="font-serif font-bold text-base text-ivory-50 mt-0.5">
+                    Kabupaten Malang, Jawa Timur
+                  </p>
+                  <p class="text-xs text-ivory-200/80 mt-1">Periode: 28 Desember 2026 – 04 Februari 2027</p>
+                </div>
+                <button onclick="openPoskoModal()" class="px-3 py-1.5 rounded-lg bg-ivory-50/10 hover:bg-ivory-50/20 text-gold-400 text-[11px] font-bold shrink-0">
+                  Ubah
+                </button>
+              </div>
+            </div>
+
+            <!-- Kartu Media Sosial Instagram & TikTok -->
+            <div class="space-y-3">
+              <!-- Instagram -->
+              <div class="p-4 rounded-2xl bg-ivory-50 text-burgundy-950 flex items-center justify-between gap-3 shadow-sm">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-burgundy-900 text-gold-400 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-[11px] font-bold uppercase tracking-wider text-taupe">Instagram Resmi</div>
+                    <div class="font-serif font-bold text-base text-burgundy-900">@kkmsanskara</div>
+                  </div>
+                </div>
+                <button onclick="copyToClipboard('@kkmsanskara', 'Username Instagram @kkmsanskara berhasil disalin!')" class="px-3.5 py-2 rounded-xl bg-burgundy-100 hover:bg-burgundy-900 text-burgundy-900 hover:text-ivory-50 text-xs font-bold transition-colors">
+                  Salin
+                </button>
+              </div>
+
+              <!-- TikTok -->
+              <div class="p-4 rounded-2xl bg-ivory-50 text-burgundy-950 flex items-center justify-between gap-3 shadow-sm">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-burgundy-900 text-gold-400 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-[11px] font-bold uppercase tracking-wider text-taupe">TikTok Resmi</div>
+                    <div class="font-serif font-bold text-base text-burgundy-900">@kkmsanskara</div>
+                  </div>
+                </div>
+                <button onclick="copyToClipboard('@kkmsanskara', 'Username TikTok @kkmsanskara berhasil disalin!')" class="px-3.5 py-2 rounded-xl bg-burgundy-100 hover:bg-burgundy-900 text-burgundy-900 hover:text-ivory-50 text-xs font-bold transition-colors">
+                  Salin
+                </button>
+              </div>
+            </div>
+
+            <!-- Info Institusi LP2M -->
+            <div class="pt-4 border-t border-ivory-50/15 text-xs text-ivory-200/85 space-y-1">
+              <p class="font-bold text-gold-400">LP2M UIN Maulana Malik Ibrahim Malang</p>
+              <p>Jl. Gajayana No. 50, Dinoyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65144</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 9. FOOTER ELEGAN DENGAN LOGO RESMI KKM SANSKARA                       -->
+  <!-- ===================================================================== -->
+  <footer class="bg-burgundy-950 text-ivory-100 border-t-2 border-gold-500/40 pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-ivory-50/15">
+        <!-- Kolom Identitas & Logo Resmi dalam Bingkai Champagne Sand -->
+        <div class="lg:col-span-5">
+          <div class="flex items-center gap-4 mb-5">
+            <div class="w-20 h-22 rounded-t-full rounded-b-2xl logo-medallion-bg p-1.5 border-2 border-gold-500 shadow-luxury flex items-center justify-center shrink-0">
+              <img
+                src="LOGO KKM PNG.png"
+                alt="Logo Resmi KKM Sanskara"
+                class="w-16 h-16 object-contain"
+                onerror="handleLogoFallback(this, 'w-16 h-16')"
+              />
+            </div>
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-gold-400 block">Kuliah Kerja Mahasiswa</span>
+              <h3 class="font-serif font-bold text-2xl text-ivory-50 tracking-wide">KKM SANSKARA</h3>
+              <p class="text-xs text-ivory-200/90 mt-0.5">28 Desember 2026 – 04 Februari 2027</p>
+            </div>
+          </div>
+          <p class="text-sm text-ivory-200/80 leading-relaxed max-w-md">
+            Kelompok Kuliah Kerja Mahasiswa UIN Maulana Malik Ibrahim Malang di bawah naungan Lembaga Penelitian dan Pengabdian kepada Masyarakat (LP2M). Berkomitmen menorehkan jejak kebaikan yang bermakna dan berkelanjutan.
+          </p>
+        </div>
+
+        <!-- Tautan Cepat -->
+        <div class="lg:col-span-3">
+          <h4 class="font-serif font-bold text-base text-gold-400 uppercase tracking-wider mb-4">Navigasi Portal</h4>
+          <ul class="space-y-2.5 text-sm text-ivory-200/85">
+            <li><a href="#beranda" class="hover:text-gold-400 transition-colors">Beranda & Hitung Mundur</a></li>
+            <li><a href="#filosofi" class="hover:text-gold-400 transition-colors">Filosofi & 4 Pilar</a></li>
+            <li><a href="#proker" class="hover:text-gold-400 transition-colors">Direktori Program Kerja</a></li>
+            <li><a href="#tim" class="hover:text-gold-400 transition-colors">Struktur & Anggota Tim</a></li>
+            <li><a href="#linimasa" class="hover:text-gold-400 transition-colors">Linimasa Pengabdian</a></li>
+            <li><a href="#jurnal-galeri" class="hover:text-gold-400 transition-colors">Jurnal & Galeri Dokumentasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Pilar & Institusi -->
+        <div class="lg:col-span-4">
+          <h4 class="font-serif font-bold text-base text-gold-400 uppercase tracking-wider mb-4">Afiliasi Institusi</h4>
+          <div class="p-4 rounded-2xl bg-burgundy-900/80 border border-ivory-50/10 space-y-2 text-xs sm:text-sm text-ivory-200/90">
+            <p class="font-bold text-ivory-50">UIN Maulana Malik Ibrahim Malang</p>
+            <p>Lembaga Penelitian dan Pengabdian kepada Masyarakat (LP2M)</p>
+            <p class="text-gold-400 font-semibold pt-1">Instagram & TikTok: @kkmsanskara</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-ivory-200/70">
+        <p>© 2026 KKM SANSKARA • LP2M UIN Maulana Malik Ibrahim Malang. Hak Cipta Dilindungi.</p>
+        <p class="font-serif italic text-gold-400/90">“Menyempurnakan Pengabdian, Memuliakan Peradaban Desa”</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 1: DETAIL PROGRAM KERJA                                         -->
+  <!-- ===================================================================== -->
+  <div id="proker-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-burgundy-950/75 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="pm-title">
+    <div class="bg-ivory-50 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border-2 border-gold-500/60 shadow-luxury-lg animate-fade-in">
+      <div class="bg-batik-burgundy p-6 sm:p-8 text-ivory-50 relative overflow-hidden">
+        <button onclick="closeModal('proker-modal')" class="absolute top-5 right-5 z-10 w-10 h-10 rounded-full bg-ivory-50/15 hover:bg-ivory-50/25 text-ivory-50 flex items-center justify-center transition-colors" aria-label="Tutup Detail">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <div class="flex items-start gap-4 pr-10">
+          <!-- Medali Logo KKM Sanskara pada Header Modal Proker -->
+          <div class="hidden sm:flex w-16 h-18 rounded-t-full rounded-b-2xl logo-medallion-bg p-1.5 border border-gold-500 shadow-md items-center justify-center shrink-0">
+            <img
+              src="LOGO KKM PNG.png"
+              alt="Logo KKM Sanskara"
+              class="w-13 h-13 object-contain"
+              onerror="handleLogoFallback(this, 'w-13 h-13')"
+            />
+          </div>
+
+          <div>
+            <div class="flex flex-wrap items-center gap-2 mb-2.5">
+              <span id="pm-category" class="px-3 py-1 rounded-full bg-gold-500 text-burgundy-950 text-xs font-bold uppercase tracking-wider">Kategori</span>
+              <span id="pm-week" class="px-3 py-1 rounded-full bg-ivory-50/15 text-ivory-50 text-xs font-semibold">Pekan</span>
+              <span id="pm-status" class="px-3 py-1 rounded-full bg-ivory-50 text-burgundy-900 text-xs font-bold">Status</span>
+            </div>
+            <h3 id="pm-title" class="font-serif font-bold text-2xl sm:text-3xl text-ivory-50 leading-snug">Judul Program Kerja</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 sm:p-8 space-y-5 text-sm sm:text-base">
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-burgundy-800 mb-1.5">Latar Belakang</h4>
+          <p id="pm-background" class="text-taupe leading-relaxed"></p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-burgundy-800 mb-1.5">Tujuan Pelaksanaan</h4>
+          <p id="pm-objective" class="text-taupe leading-relaxed"></p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-ivory-100 p-4 rounded-2xl border border-ivory-300">
+          <div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-gold-600 block">Sasaran Peserta</span>
+            <span id="pm-target" class="font-semibold text-burgundy-950 text-sm"></span>
+          </div>
+          <div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-gold-600 block">Divisi Penanggung Jawab</span>
+            <span id="pm-division" class="font-semibold text-burgundy-950 text-sm"></span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-burgundy-800 mb-2">Indikator Keberhasilan</h4>
+          <ul id="pm-indicators" class="space-y-2 text-sm text-burgundy-950"></ul>
+        </div>
+
+        <div class="pt-4 border-t border-ivory-200 flex justify-end">
+          <button onclick="closeModal('proker-modal')" class="px-6 py-2.5 rounded-xl bg-burgundy-900 hover:bg-burgundy-800 text-ivory-50 text-sm font-semibold transition-colors">
+            Tutup Rincian
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 2: BACA ARTIKEL JURNAL LENGKAP                                  -->
+  <!-- ===================================================================== -->
+  <div id="article-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-burgundy-950/75 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="am-title">
+    <div class="bg-ivory-50 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border-2 border-gold-500/60 shadow-luxury-lg animate-fade-in">
+      <div class="p-6 sm:p-8 border-b border-ivory-300 flex items-start justify-between gap-4 bg-ivory-100">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-bold text-burgundy-800 uppercase tracking-wider mb-2">
+            <span id="am-category">Kategori</span>
+            <span>•</span>
+            <span id="am-date" class="text-taupe font-medium">Tanggal</span>
+          </div>
+          <h3 id="am-title" class="font-serif font-bold text-2xl sm:text-3xl text-burgundy-900 leading-snug">Judul Artikel</h3>
+          <p id="am-author" class="text-xs text-taupe mt-2">Ditulis oleh Tim Redaksi KKM Sanskara</p>
+        </div>
+        <button onclick="closeModal('article-modal')" class="w-10 h-10 rounded-full bg-ivory-200 hover:bg-burgundy-100 text-burgundy-900 flex items-center justify-center shrink-0 transition-colors" aria-label="Tutup Artikel">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div id="am-body" class="p-6 sm:p-8 space-y-4 text-sm sm:text-base text-burgundy-950/90 leading-relaxed"></div>
+
+      <div class="px-6 sm:px-8 py-4 bg-ivory-100 border-t border-ivory-300 flex items-center justify-between">
+        <button onclick="copyToClipboard(window.location.href, 'Tautan portal KKM Sanskara berhasil disalin!')" class="px-4 py-2 rounded-xl bg-ivory-50 border border-ivory-300 hover:bg-burgundy-100 text-burgundy-900 text-xs font-bold transition-colors">
+          Salin Tautan Jurnal
+        </button>
+        <button onclick="closeModal('article-modal')" class="px-5 py-2 rounded-xl bg-burgundy-900 text-ivory-50 text-xs font-bold">
+          Selesai Membaca
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 3: LIGHTBOX GALERI DOKUMENTASI                                  -->
+  <!-- ===================================================================== -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-burgundy-950/85 backdrop-blur-md" role="dialog" aria-modal="true" aria-labelledby="lb-title">
+    <div class="bg-ivory-50 rounded-3xl max-w-3xl w-full overflow-hidden border-2 border-gold-500/70 shadow-luxury-lg animate-fade-in">
+      <div class="relative bg-burgundy-950 flex items-center justify-center min-h-[260px] sm:min-h-[360px] p-6" id="lb-visual-container"></div>
+
+      <div class="p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span id="lb-cat" class="px-2.5 py-0.5 rounded-full bg-burgundy-100 text-burgundy-800 text-xs font-bold">Kategori</span>
+            <span id="lb-date" class="text-xs text-taupe">Tanggal</span>
+          </div>
+          <h3 id="lb-title" class="font-serif font-bold text-xl text-burgundy-900">Judul Dokumentasi</h3>
+          <p id="lb-desc" class="text-xs sm:text-sm text-taupe mt-1"></p>
+        </div>
+
+        <div class="flex items-center gap-2 shrink-0">
+          <button onclick="navigateLightbox(-1)" class="p-2.5 rounded-xl bg-ivory-200 hover:bg-burgundy-100 text-burgundy-900 font-bold" aria-label="Foto Sebelumnya">←</button>
+          <button onclick="navigateLightbox(1)" class="p-2.5 rounded-xl bg-ivory-200 hover:bg-burgundy-100 text-burgundy-900 font-bold" aria-label="Foto Berikutnya">→</button>
+          <button onclick="closeModal('lightbox-modal')" class="px-4 py-2.5 rounded-xl bg-burgundy-900 text-ivory-50 text-xs font-bold">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 4: PENGATURAN DATA POSKO / DESA & DPL (ADMIN KELOMPOK)          -->
+  <!-- ===================================================================== -->
+  <div id="posko-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-burgundy-950/75 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="posko-modal-title">
+    <div class="bg-ivory-50 rounded-3xl max-w-lg w-full overflow-hidden border-2 border-gold-500/60 shadow-luxury-lg animate-fade-in">
+      <div class="bg-burgundy-900 p-6 text-ivory-50 flex items-center justify-between">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-widest text-gold-400">Kustomisasi Portal</span>
+          <h3 id="posko-modal-title" class="font-serif font-bold text-xl">Sesuaikan Data Posko & DPL</h3>
+        </div>
+        <button onclick="closeModal('posko-modal')" class="w-9 h-9 rounded-full bg-ivory-50/15 hover:bg-ivory-50/25 flex items-center justify-center">✕</button>
+      </div>
+
+      <form id="posko-form" class="p-6 space-y-4">
+        <p class="text-xs text-taupe leading-relaxed">
+          Perubahan ini langsung diperbarui pada bagian Hero, Struktur Tim, dan Kartu Kontak Resmi serta tersimpan otomatis di peramban Anda.
+        </p>
+
+        <div>
+          <label for="input-desa" class="block text-xs font-bold uppercase tracking-wider text-burgundy-900 mb-1">Lokasi Desa & Kecamatan Posko</label>
+          <input id="input-desa" type="text" required class="w-full px-4 py-2.5 rounded-xl bg-ivory-100 border border-ivory-300 text-sm text-burgundy-950 focus:outline-none focus:border-burgundy-800" />
+        </div>
+
+        <div>
+          <label for="input-dpl" class="block text-xs font-bold uppercase tracking-wider text-burgundy-900 mb-1">Nama Dosen Pembimbing Lapangan (DPL)</label>
+          <input id="input-dpl" type="text" required class="w-full px-4 py-2.5 rounded-xl bg-ivory-100 border border-ivory-300 text-sm text-burgundy-950 focus:outline-none focus:border-burgundy-800" />
+        </div>
+
+        <div>
+          <label for="input-ketua" class="block text-xs font-bold uppercase tracking-wider text-burgundy-900 mb-1">Nama Ketua Kelompok Sanskara</label>
+          <input id="input-ketua" type="text" required class="w-full px-4 py-2.5 rounded-xl bg-ivory-100 border border-ivory-300 text-sm text-burgundy-950 focus:outline-none focus:border-burgundy-800" />
+        </div>
+
+        <div class="pt-3 flex items-center justify-between gap-3">
+          <button type="button" onclick="resetPoskoSettings()" class="px-4 py-2.5 rounded-xl bg-ivory-200 hover:bg-ivory-300 text-burgundy-900 text-xs font-bold">
+            Reset Default
+          </button>
+          <button type="submit" class="px-6 py-2.5 rounded-xl bg-burgundy-900 hover:bg-burgundy-800 text-ivory-50 text-xs font-bold shadow-md">
+            Simpan Perubahan
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION (PENGGANTI ALERT) -->
+  <div id="toast-notification" class="fixed bottom-6 right-6 z-50 hidden items-center gap-3 px-5 py-3.5 rounded-2xl bg-burgundy-950 text-ivory-50 border border-gold-500/60 shadow-luxury-lg text-xs sm:text-sm font-semibold transition-all">
+    <span class="w-2.5 h-2.5 rounded-full bg-gold-400"></span>
+    <span id="toast-message">Notifikasi</span>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- JAVASCRIPT INTERAKTIF LENGKAP                                         -->
+  <!-- ===================================================================== -->
+  <script>
+    // =========================================================================
+    // 0. RENDER VEKTOR FALLBACK LOGO RESMI KKM SANSKARA ('LOGO KKM PNG.png')
+    // =========================================================================
+    // Menggambar ulang persis seluruh elemen logo resmi:
+    // 1. Matahari setengah lingkaran Deep Burgundy (#711625) + sinar segitiga Warm Ivory (#FCF9EE)
+    // 2. Tiga helai daun (daun besar tegak Ivory, daun kecil kiri Ivory, daun utama kanan Burgundy)
+    // 3. Simpul pita/tali anyaman S abstrak Burgundy (#711625) berjalin dengan dua kelopak Ivory (#FCF9EE)
+    // 4. Tulisan melengkung 'SANSKARA' bergaya serif ukir berwarna hitam
+    function getSanskaraLogoSVG(sizeClasses = "w-full h-full") {
+      const uid = "sk_" + Math.random().toString(36).substring(2, 9);
+      return `
+        <svg class="${sizeClasses} select-none" viewBox="0 0 320 330" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Resmi KKM Sanskara">
+          <defs>
+            <path id="${uid}_arc" d="M 62,268 Q 160,308 258,268" />
+          </defs>
+
+          <!-- 1. SURYA UTAMA: Matahari Setengah Lingkaran Burgundy & Sinar Segitiga Warm Ivory -->
+          <g transform="translate(142, 128) rotate(-32)">
+            <!-- Sinar Segitiga Warm Ivory (#FCF9EE) -->
+            <polygon points="-42,-4 -54,-10 -40,-15" fill="#FCF9EE"/>
+            <polygon points="-37,-21 -47,-30 -32,-31" fill="#FCF9EE"/>
+            <polygon points="-24,-34 -30,-47 -16,-41" fill="#FCF9EE"/>
+            <polygon points="-7,-41 -8,-55 3,-42" fill="#FCF9EE"/>
+            <polygon points="12,-40 18,-53 22,-37" fill="#FCF9EE"/>
+            <polygon points="28,-31 39,-41 36,-25" fill="#FCF9EE"/>
+            <polygon points="39,-16 52,-21 43,-7" fill="#FCF9EE"/>
+            <!-- Setengah Lingkaran Matahari Deep Burgundy (#711625) -->
+            <path d="M -36,0 A 36,36 0 0,1 36,0 Z" fill="#711625"/>
+          </g>
+
+          <!-- 2A. DAUN KECIL KIRI WARM IVORY (#FCF9EE) -->
+          <path d="M 150,156 C 128,158 106,146 95,127 C 117,124 139,135 150,156 Z" fill="#FCF9EE"/>
+
+          <!-- 2B. DAUN BESAR TEGAK TENGAH ATAS WARM IVORY (#FCF9EE) -->
+          <path d="M 155,172 C 138,140 144,98 173,68 C 194,102 188,144 155,172 Z" fill="#FCF9EE"/>
+
+          <!-- 3A. KELOPAK ANYAMAN KIRI & KANAN WARM IVORY (#FCF9EE) -->
+          <!-- Kelopak Kiri Ivory -->
+          <path d="M 152,174 C 116,158 84,174 84,210 C 84,244 118,260 154,244 L 146,232 C 120,242 99,231 99,210 C 99,189 120,178 145,188 Z" fill="#FCF9EE"/>
+          <!-- Kelopak Kanan Ivory -->
+          <path d="M 168,174 C 204,158 236,174 236,210 C 236,244 202,260 166,244 L 174,232 C 200,242 221,231 221,210 C 221,189 200,178 175,188 Z" fill="#FCF9EE"/>
+
+          <!-- 2C & 3B. SIMPUL PITA ANYAMAN S ABSTRAK & DAUN UTAMA KANAN DEEP BURGUNDY (#711625) -->
+          <!-- Lengkungan Sisi Kiri Tetesan Air Burgundy (di bawah perpotongan tengah) -->
+          <path d="M 152,193 C 134,212 126,232 132,250 C 138,264 150,273 160,279 L 160,263 C 151,257 145,250 144,241 C 142,229 149,216 161,203 Z" fill="#711625"/>
+          <!-- Batang Utama Diagonal ke Daun Kanan + Lengkungan Sisi Kanan Tetesan Air Burgundy -->
+          <path d="M 136,184 C 150,166 166,152 184,143 C 190,124 210,113 236,112 C 235,138 220,157 195,160 C 188,161 182,160 176,158 C 163,167 152,179 143,193 Z" fill="#711625"/>
+          <path d="M 167,183 C 185,204 196,227 190,249 C 184,264 171,273 160,279 L 160,263 C 169,257 176,249 177,239 C 179,224 170,208 158,193 Z" fill="#711625"/>
+
+          <!-- 4. AKSARA MELENGKUNG 'SANSKARA' BERGAYA SERIF UKIR HITAM -->
+          <text fill="#14080B" stroke="#14080B" stroke-width="0.6" font-family="'Playfair Display', Georgia, serif" font-weight="800" font-size="25.5" letter-spacing="2.4">
+            <textPath href="#${uid}_arc" startOffset="50%" text-anchor="middle">SANSKARA</textPath>
+          </text>
+          <text fill="none" stroke="#FCF9EE" stroke-width="0.45" stroke-opacity="0.65" font-family="'Playfair Display', Georgia, serif" font-weight="800" font-size="25.5" letter-spacing="2.4">
+            <textPath href="#${uid}_arc" startOffset="50%" text-anchor="middle">SANSKARA</textPath>
+          </text>
+        </svg>
+      `;
+    }
+
+    function handleLogoFallback(imgEl, sizeClasses = "w-full h-full") {
+      if (!imgEl || !imgEl.parentNode) return;
+      const wrapper = document.createElement("div");
+      wrapper.className = sizeClasses + " flex items-center justify-center";
+      wrapper.innerHTML = getSanskaraLogoSVG("w-full h-full");
+      imgEl.parentNode.replaceChild(wrapper, imgEl);
+    }
+
+    // =========================================================================
+    // 1. DATA MASTER PROGRAM KERJA (10 PROKER SESUAI 4 PILAR UTAMA)
+    // =========================================================================
+    const programsData = [
+      {
+        id: 1,
+        title: "Sanskara Digital Hub: Rebranding & Katalog Digital UMKM Desa",
+        category: "Ekonomi Kreatif & UMKM",
+        featured: true,
+        status: "Persiapan",
+        week: "Pekan 2 – 4",
+        division: "Divisi Ekonomi & PDD",
+        summary: "Pendampingan desain ulang kemasan produk lokal, foto katalog profesional, serta pembuatan etalase digital berbasis QR Code.",
+        background: "Banyak produk olahan unggulan warga desa memiliki kualitas rasa yang unggul namun terkendala tampilan kemasan konvensional dan minimnya jangkauan pemasaran daring.",
+        objective: "Meningkatkan daya tarik visual produk UMKM lokal, memberikan identitas merek yang kuat, serta membuka akses pemasaran digital yang mudah diakses pembeli.",
+        target: "15 Pelaku Usaha Mikro, Kecil, dan Menengah (UMKM) Desa",
+        indicators: [
+          "Tersusunnya katalog digital terpadu produk UMKM Desa",
+          "Rebranding desain stiker/kemasan baru untuk minimal 10 produk lokal",
+          "Pembuatan titik lokasi Google Business Profile untuk seluruh mitra UMKM"
+        ]
+      },
+      {
+        id: 2,
+        title: "Rumah Belajar Sanskara: Bimbingan Literasi, Numerasi & Bahasa",
+        category: "Pendidikan & Literasi",
+        featured: true,
+        status: "Persiapan",
+        week: "Pekan 1 – 5",
+        division: "Divisi Acara & Pendidikan",
+        summary: "Ruang pendampingan belajar sore hari bagi siswa SD/MI dengan metode permainan edukatif, literasi baca, dan pengenalan bahasa Inggris & Arab dasar.",
+        background: "Anak-anak usia sekolah dasar memerlukan ruang pendampingan belajar yang menyenangkan di luar jam sekolah formal guna memperkuat minat baca dan kepercayaan diri.",
+        objective: "Menumbuhkan budaya gemar membaca, meningkatkan pemahaman berhitung dasar, dan mengenalkan kosakata bahasa asing secara interaktif.",
+        target: "Anak-anak usia 6 – 12 tahun (Jenjang SD/MI) di sekitar Posko",
+        indicators: [
+          "Terlaksananya kelas bimbingan rutin 4 kali dalam sepekan",
+          "Tersedianya pojok baca mini berisi 100+ buku cerita & pengetahuan",
+          "Peningkatan partisipasi aktif anak melalui pentas literasi akhir pekan"
+        ]
+      },
+      {
+        id: 3,
+        title: "Gema Mengaji & Penguatan Kurikulum TPQ Akhlakul Karimah",
+        category: "Sosial Keagamaan & Digitalisasi",
+        featured: false,
+        status: "Persiapan",
+        week: "Pekan 1 – 5",
+        division: "Divisi Humas & Kemitraan",
+        summary: "Sinergi mengajar bersama ustadz/ustadzah TPQ desa dalam pembelajaran tajwid, hafalan surat pendek, doa harian, dan kisah keteladanan Nabi.",
+        background: "Taman Pendidikan Al-Qur'an (TPQ) merupakan fondasi utama pembentukan karakter religius generasi muda desa yang perlu didukung metode pengajaran variatif.",
+        objective: "Membantu tenaga pendidik TPQ dalam memperlancar bacaan Al-Qur'an santri serta menanamkan nilai akhlak mulia dan moderasi beragama.",
+        target: "Santri TPQ & Remaja Masjid Desa",
+        indicators: [
+          "Pendampingan rutin di 2–3 titik TPQ/Musholla desa",
+          "Terselenggaranya Festival Anak Sholeh (lomba adzan, tartil, dan hafalan)",
+          "Penyerahan modul panduan tajwid & doa harian untuk santri"
+        ]
+      },
+      {
+        id: 4,
+        title: "Gerakan Desa Hijau: Bank Sampah & Workshop Eco-Enzyme",
+        category: "Kesehatan & Lingkungan",
+        featured: false,
+        status: "Persiapan",
+        week: "Pekan 2 – 3",
+        division: "Divisi Kesehatan & Lingkungan",
+        summary: "Pelatihan pemilahan sampah rumah tangga dan pengolahan limbah kulit buah/sayur menjadi cairan serbaguna Eco-Enzyme ramah lingkungan.",
+        background: "Limbah organik dapur rumah tangga sering kali belum dimanfaatkan secara optimal dan berpotensi menimbulkan penumpukan sampah lingkungan.",
+        objective: "Mengedukasi warga tentang pemilahan sampah bernilai ekonomis serta mempraktikkan pembuatan Eco-Enzyme untuk pupuk cair dan pembersih alami.",
+        target: "Ibu-ibu PKK, Kader Lingkungan, dan Pengurus RT/RW",
+        indicators: [
+          "Terbentuknya 1 unit percontohan Bank Sampah tingkat dusun",
+          "Produksi bersama minimal 30 liter larutan fermentasi Eco-Enzyme",
+          "Terpasangnya papan edukasi waktu urai sampah di titik strategis"
+        ]
+      },
+      {
+        id: 5,
+        title: "Posyandu Remaja & Edukasi Gizi Seimbang Cegah Stunting",
+        category: "Kesehatan & Lingkungan",
+        featured: false,
+        status: "Persiapan",
+        week: "Pekan 2 & 4",
+        division: "Divisi Kesehatan & Lingkungan",
+        summary: "Kolaborasi bersama Bidan Desa dan Kader Posyandu dalam pemeriksaan kesehatan dasar, edukasi tablet tambah darah remaja putri, dan menu gizi balita.",
+        background: "Pencegahan stunting sejak hulu memerlukan perhatian pada asupan gizi ibu, balita, serta kesehatan reproduksi dan anemia pada usia remaja.",
+        objective: "Meningkatkan kesadaran keluarga dan remaja desa terhadap pentingnya pola konsumsi gizi seimbang serta pemantauan tumbuh kembang berkala.",
+        target: "Ibu Hamil, Ibu Balita, Kader Posyandu, dan Remaja Desa",
+        indicators: [
+          "Pendampingan penuh pada 2 jadwal rutin Posyandu Balita & Lansia",
+          "Terselenggaranya 1 sesi penyuluhan gizi seimbang & demo MPASI sehat",
+          "Distribusi buku saku gizi dan pemeriksaan tekanan darah/IMT remaja"
+        ]
+      },
+      {
+        id: 6,
+        title: "Pemetaan Potensi & Profil Digital Desa Berbasis Web",
+        category: "Sosial Keagamaan & Digitalisasi",
+        featured: true,
+        status: "Persiapan",
+        week: "Pekan 1 – 3",
+        division: "Divisi PDD & BPH",
+        summary: "Penyusunan dokumen profil potensi desa, peta fasilitas umum & sentra UMKM, serta video dokumenter profil desa untuk arsip pemerintah desa.",
+        background: "Ketersediaan data potensi wisata, pertanian, dan UMKM desa dalam format digital sangat dibutuhkan untuk menarik kemitraan luar.",
+        objective: "Menghadirkan profil desa yang informatif, modern, dan mudah dipresentasikan oleh perangkat desa kepada tamu maupun mitra pembangunan.",
+        target: "Pemerintah Desa, BPD, dan Kelompok Sadar Wisata (Pokdarwis)",
+        indicators: [
+          "Penyerahan 1 paket Video Profil Desa berdurasi 3–5 menit",
+          "Peta infografis potensi dan fasilitas umum desa cetak & digital",
+          "Serah terima resmi arsip dokumentasi kepada Kepala Desa"
+        ]
+      },
+      {
+        id: 7,
+        title: "Inkubasi Wirausaha Karang Taruna & Pelatihan Konten Kreatif",
+        category: "Ekonomi Kreatif & UMKM",
+        featured: false,
+        status: "Persiapan",
+        week: "Pekan 3",
+        division: "Divisi PDD & Humas",
+        summary: "Pelatihan praktis fotografi produk menggunakan ponsel pintar, penyuntingan video singkat, dan strategi promosi media sosial bagi pemuda desa.",
+        background: "Pemuda Karang Taruna memiliki energi kreatif yang besar untuk menjadi motor penggerak ekonomi digital di desanya sendiri.",
+        objective: "Membekali pemuda desa dengan keterampilan produksi konten visual kreatif untuk mempromosikan potensi lokal.",
+        target: "25 Anggota Karang Taruna dan Pelaku Usaha Muda Desa",
+        indicators: [
+          "Setiap peserta menghasilkan minimal 1 foto produk & 1 video promosi",
+          "Terbentuknya tim kreatif pemuda pengelola media informasi desa",
+          "Modul praktis panduan fotografi & copywriting media sosial"
+        ]
+      },
+      {
+        id: 8,
+        title: "Sanitasi Bersih & Plangisasi Edukasi Lingkungan Ramah Anak",
+        category: "Kesehatan & Lingkungan",
+        featured: false,
+        status: "Persiapan",
+        week: "Pekan 3 – 4",
+        division: "Divisi Perlengkapan & Konsumsi",
+        summary: "Kerja bakti pembersihan fasilitas umum, pengecatan ulang sarana edukatif, serta pemasangan plang petunjuk jalan dan himbauan kebersihan.",
+        background: "Lingkungan desa yang tertata bersih, aman, dan informatif menciptakan kenyamanan bagi warga sekaligus pengunjung desa.",
+        objective: "Memperkuat budaya gotong royong serta melengkapi sarana penunjuk arah dusun dan pesan edukasi pelestarian alam.",
+        target: "Seluruh Warga Dusun & Perangkat RT/RW",
+        indicators: [
+          "Pemasangan 12 unit plang petunjuk arah & edukasi lingkungan",
+          "Terlaksananya 2 kali kerja bakti massal bersama warga dusun",
+          "Revitalisasi sudut baca/taman edukasi lingkungan di sekitar posko"
+        ]
+      },
+      {
+        id: 9,
+        title: "Kajian Moderasi Beragama & Majelis Taklim Ibu-Ibu PKK",
+        category: "Sosial Keagamaan & Digitalisasi",
+        featured: false,
+        status: "Persiapan",
+        week: "Pekan 2 – 4",
+        division: "Divisi Humas & Kemitraan",
+        summary: "Silaturahmi rutin dalam kegiatan tahlilan, diba'an, serta diskusi hangat penguatan ketahanan keluarga sakinah dan kerukunan bertetangga.",
+        background: "Majelis taklim warga merupakan ruang interaksi sosial paling hidup yang mempererat ikatan emosional antara mahasiswa dan masyarakat.",
+        objective: "Merawat tradisi keagamaan masyarakat desa sekaligus berbagi wawasan pengasuhan anak di era digital.",
+        target: "Jamaah Majelis Taklim, Muslimat/Fatayat, dan Ibu-Ibu PKK",
+        indicators: [
+          "Kehadiran aktif tim Sanskara dalam agenda rutin keagamaan warga",
+          "Terselenggaranya 1 forum diskusi parenting Islami era digital",
+          "Terjalinnya komunikasi harmonis antara posko dan tokoh agama desa"
+        ]
+      },
+      {
+        id: 10,
+        title: "Panggung Budaya & Expo Karya Sanskara (Closing Ceremony)",
+        category: "Pendidikan & Literasi",
+        featured: true,
+        status: "Persiapan",
+        week: "Pekan 5",
+        division: "Seluruh Divisi KKM Sanskara",
+        summary: "Puncak persembahan pengabdian berupa pameran produk UMKM binaan, pentas seni santri TPQ & siswa Rumah Belajar, serta malam apresiasi warga.",
+        background: "Diperlukan ruang selebrasi bersama untuk menampilkan seluruh capaian kolaborasi warga dan mahasiswa selama 40 hari pengabdian.",
+        objective: "Memperkuat rasa bangga masyarakat atas potensi desanya sekaligus menjadi momen pamitan yang berkesan sebelum penarikan KKM.",
+        target: "Seluruh Masyarakat Desa, Perangkat Desa, dan DPL",
+        indicators: [
+          "Pameran 15 stan produk UMKM lokal dan hasil karya anak-anak desa",
+          "Pentas kreasi seni budaya lokal dan penampilan santri TPQ",
+          "Penyerahan plakat kenang-kenangan & laporan capaian kepada desa"
+        ]
+      }
+    ];
+
+    // =========================================================================
+    // 2. DATA MASTER ANGGOTA TIM (15 MAHASISWA LINTAS 6 DIVISI)
+    // =========================================================================
+    const teamMembersData = [
+      { name: "Muhammad Rayhan Al-Faruq", role: "Ketua Kelompok", division: "BPH", prodi: "Hukum Ekonomi Syariah", ig: "@rayhan.alfaruq", motto: "Mengabdi dengan keteladanan." },
+      { name: "Nadia Putri Salsabila", role: "Wakil Ketua", division: "BPH", prodi: "Manajemen", ig: "@nadiasalsabila", motto: "Kolaborasi adalah kunci keberlanjutan." },
+      { name: "Aisyah Kamila Zahra", role: "Sekretaris I", division: "BPH", prodi: "Sastra Inggris", ig: "@aisyahkamila", motto: "Tercatat rapi, bermakna abadi." },
+      { name: "Rizky Maulana Hakim", role: "Sekretaris II", division: "BPH", prodi: "Administrasi Pendidikan", ig: "@rizkyhakim", motto: "Sinergi langkah untuk desa berdaya." },
+      { name: "Fatimah Azzahra", role: "Bendahara", division: "BPH", prodi: "Akuntansi", ig: "@fatimah.azz", motto: "Amanah dan transparan dalam setiap karya." },
+      { name: "Ahmad Zidan Pratama", role: "Koordinator Acara", division: "Acara & Pendidikan", prodi: "Pendidikan Agama Islam", ig: "@zidanpratama", motto: "Mendidik dengan hati, menginspirasi generasi." },
+      { name: "Siti Nurhaliza Rahma", role: "Anggota Divisi", division: "Acara & Pendidikan", prodi: "Pendidikan Guru MI", ig: "@nurhalizarahma", motto: "Literasi cahaya masa depan anak desa." },
+      { name: "Farhan Abdurrahman", role: "Anggota Divisi", division: "Acara & Pendidikan", prodi: "Psikologi", ig: "@farhan.abdur", motto: "Mendengar empati, tumbuh bersama." },
+      { name: "Luqman Hakim Ash-Shiddiq", role: "Koordinator Humas", division: "Humas & Kemitraan", prodi: "Ilmu Al-Qur'an & Tafsir", ig: "@luqmanhakim", motto: "Merawat silaturahmi, menebar harmoni." },
+      { name: "Dina Oktaviani", role: "Anggota Divisi", division: "Humas & Kemitraan", prodi: "Perbankan Syariah", ig: "@dinaoktav", motto: "Kemitraan hangat penggerak UMKM." },
+      { name: "Bagas Adi Nugroho", role: "Koordinator PDD", division: "PDD", prodi: "Teknik Informatika", ig: "@bagasadinugroho", motto: "Teknologi hadir memuliakan potensi lokal." },
+      { name: "Shafa Nabila Putri", role: "Anggota Divisi", division: "PDD", prodi: "Perpustakaan & Ilmu Info", ig: "@shafanabila", motto: "Setiap momen pengabdian layak dikenang." },
+      { name: "Khairunnisa Maulida", role: "Koordinator Kesling", division: "Kesehatan & Lingkungan", prodi: "Farmasi", ig: "@khairunnisam", motto: "Sehat raganya, lestari alam desanya." },
+      { name: "Intan Permata Sari", role: "Anggota Divisi", division: "Kesehatan & Lingkungan", prodi: "Biologi", ig: "@intanpermata", motto: "Ekologi terjaga, generasi tumbuh prima." },
+      { name: "Dimas Arya Saputra", role: "Koordinator Perkap", division: "Perlengkapan & Konsumsi", prodi: "Teknik Arsitektur", ig: "@dimasarya", motto: "Menopang logistik dan kehangatan posko." }
+    ];
+
+    // =========================================================================
+    // 3. DATA LINIMASA KEGIATAN (5 FASE TERSTRUKTUR)
+    // =========================================================================
+    const timelineData = [
+      {
+        phase: "Fase 01 • Pra-KKM",
+        date: "November – 27 Desember 2026",
+        title: "Pembekalan LP2M & Survei Lokasi Desa",
+        desc: "Pembekalan resmi LP2M UIN Maulana Malik Ibrahim Malang, koordinasi intensif bersama Dosen Pembimbing Lapangan (DPL), observasi sosial desa, serta penyusunan matriks program kerja KKM Sanskara.",
+        badge: "Pembekalan LP2M"
+      },
+      {
+        phase: "Fase 02 • Penerjunan",
+        date: "28 Desember 2026",
+        title: "Pelepasan & Penerjunan Resmi KKM Sanskara",
+        desc: "Apel pelepasan mahasiswa dari kampus UIN Malang menuju lokasi pengabdian, dilanjutkan seremoni penyambutan resmi bersama Kepala Desa, perangkat desa, dan tokoh masyarakat.",
+        badge: "Pelepasan & Penerjunan"
+      },
+      {
+        phase: "Fase 03 • Aksi Utama",
+        date: "29 Desember 2026 – 18 Januari 2027",
+        title: "Pelaksanaan Proker 4 Pilar Pengabdian",
+        desc: "Peluncuran Rumah Belajar Sanskara, pendampingan TPQ, rebranding kemasan & katalog digital UMKM, edukasi gizi Posyandu, serta workshop Bank Sampah dan Eco-Enzyme bersama warga.",
+        badge: "Pelaksanaan Proker"
+      },
+      {
+        phase: "Fase 04 • Evaluasi",
+        date: "19 Januari – 27 Januari 2027",
+        title: "Monitoring & Evaluasi Bersama DPL & Perangkat Desa",
+        desc: "Kunjungan lapangan Dosen Pembimbing Lapangan (DPL), peninjauan capaian indikator setiap program kerja, penyempurnaan profil digital desa berbasis web, serta persiapan expo penutup.",
+        badge: "Monitoring & Evaluasi"
+      },
+      {
+        phase: "Fase 05 • Purna Tugas",
+        date: "28 Januari – 04 Februari 2027",
+        title: "Penarikan & Ekspose Hasil Pengabdian Sanskara",
+        desc: "Panggung Budaya & Expo Karya Sanskara, serah terima resmi aset digital desa & katalog UMKM kepada pemerintah desa, hingga apel penarikan resmi pada 04 Februari 2027.",
+        badge: "Penarikan & Ekspose Hasil"
+      }
+    ];
+
+    // =========================================================================
+    // 4. DATA JURNAL KEGIATAN (3 ARTIKEL LENGKAP)
+    // =========================================================================
+    const articlesData = [
+      {
+        id: 1,
+        title: "Filosofi di Balik Nama Sanskara: Merajut Jejak Kebaikan yang Membekas",
+        category: "Opini & Filosofi",
+        date: "12 November 2026",
+        author: "Tim Redaksi KKM Sanskara",
+        excerpt: "Mengapa kami memilih kata Sanskara sebagai identitas pengabdian? Sebuah refleksi tentang makna penyempurnaan budi pekerti dan keberlanjutan karya mahasiswa di tengah masyarakat.",
+        content: [
+          "Pemilihan nama kelompok dalam Kuliah Kerja Mahasiswa (KKM) bukan sekadar penanda administratif, melainkan doa dan kompas nilai yang menuntun setiap langkah selama 39 hari di lapangan. Dari diskusi panjang lintas fakultas, lahirlah nama 'SANSKARA'.",
+          "Dalam tradisi keilmuan Sanskerta, Sanskara (Saṃskāra) merujuk pada proses penyempurnaan, pemuliaan, dan jejak kebaikan yang tertanam mendalam. Filosofi ini selaras dengan ruh Ulul Albab UIN Maulana Malik Ibrahim Malang yang memadukan kedalaman spiritual, keagungan akhlak, keluasan ilmu, dan kematangan profesional.",
+          "Melalui perpaduan warna Deep Burgundy yang melambangkan keteguhan komitmen dan Warm Ivory yang mencerminkan ketulusan hati, KKM Sanskara bertekad hadir bukan sebagai 'pemberi instruksi', melainkan sahabat belajar yang tumbuh bersama masyarakat desa mulai 28 Desember 2026 hingga 04 Februari 2027."
+        ]
+      },
+      {
+        id: 2,
+        title: "Catatan Pra-KKM: Memetakan Potensi UMKM Lokal dan Ruang Literasi Anak",
+        category: "Observasi Lapangan",
+        date: "16 November 2026",
+        author: "Divisi Ekonomi & Pendidikan",
+        excerpt: "Hasil penjajakan awal menunjukkan tingginya semangat pelaku usaha rumahan desa serta antusiasme anak-anak terhadap kegiatan belajar kreatif sore hari.",
+        content: [
+          "Menjelang penerjunan resmi akhir Desember mendatang, tim KKM Sanskara telah melakukan pemetaan awal terhadap potensi sosial-ekonomi desa. Dua sektor utama yang menonjol adalah geliat UMKM olahan pangan lokal serta tingginya populasi anak usia sekolah dasar.",
+          "Para pelaku UMKM memiliki produk dengan cita rasa otentik khas pedesaan, namun sebagian besar masih menggunakan kemasan polos tanpa label informasi produk maupun katalog digital. Di sinilah program 'Sanskara Digital Hub' dirancang untuk mendampingi rebranding kemasan secara aplikatif.",
+          "Sementara itu, di sektor pendidikan, koordinasi bersama pengurus TPQ dan tokoh masyarakat melahirkan gagasan 'Rumah Belajar Sanskara' yang akan menggabungkan pendampingan PR sekolah, literasi cerita Nusantara, dan pengenalan bahasa asing secara menyenangkan."
+        ]
+      },
+      {
+        id: 3,
+        title: "Sinergi Ekologi dan Kesehatan Keluarga Melalui Gerakan Desa Hijau",
+        category: "Gagasan Program",
+        date: "18 November 2026",
+        author: "Divisi Kesehatan & Lingkungan",
+        excerpt: "Pemanfaatan limbah organik rumah tangga menjadi Eco-Enzyme dan penguatan Posyandu Remaja menjadi ikhtiar nyata menjaga kelestarian alam dan generasi masa depan.",
+        content: [
+          "Pembangunan desa yang berkelanjutan selalu bertumpu pada dua fondasi vital: kesehatan warganya dan kelestarian lingkungannya. Menyadari hal tersebut, KKM Sanskara menyiapkan pilar khusus di bidang Kesehatan & Ekologi Desa.",
+          "Melalui workshop Eco-Enzyme, warga akan diajak mengolah sisa kulit buah dan sayuran rumah tangga menjadi cairan serbaguna yang bermanfaat sebagai pupuk organik cair maupun pembersih alami ramah lingkungan. Langkah sederhana ini diharapkan mampu mengurangi volume sampah organik dari sumbernya.",
+          "Selain itu, sinergi bersama kader Posyandu desa akan diperkuat lewat edukasi gizi seimbang pencegahan stunting dan Posyandu Remaja agar kesadaran hidup sehat tumbuh sejak usia dini."
+        ]
+      }
+    ];
+
+    // =========================================================================
+    // 5. DATA GALERI DOKUMENTASI (BESPOKE SVG ARTISTIC FRAMES)
+    // =========================================================================
+    const galleryData = [
+      {
+        id: 1,
+        title: "Rapat Koordinasi Matriks Program Kerja",
+        category: "Persiapan",
+        date: "08 November 2026",
+        desc: "Penyusunan rencana aksi lintas divisi dan penyelarasan indikator keberhasilan program bersama BPH.",
+        palette: "burgundy"
+      },
+      {
+        id: 2,
+        title: "Survei Lokasi & Silaturahmi Perangkat Desa",
+        category: "Masyarakat",
+        date: "12 November 2026",
+        desc: "Kunjungan awal ke balai desa untuk memetakan potensi wilayah serta berdialog mengenai kebutuhan warga.",
+        palette: "gold"
+      },
+      {
+        id: 3,
+        title: "Perancangan Identitas Visual KKM Sanskara",
+        category: "Tim",
+        date: "14 November 2026",
+        desc: "Proses kreatif pembuatan monogram, poster resmi, dan pedoman publikasi media sosial @kkmsanskara.",
+        palette: "ivory"
+      },
+      {
+        id: 4,
+        title: "Penyusunan Modul Rumah Belajar & TPQ",
+        category: "Persiapan",
+        date: "16 November 2026",
+        desc: "Kurasi buku bacaan anak, kartu edukasi literasi-numerasi, dan panduan pembelajaran tajwid kreatif.",
+        palette: "burgundy"
+      },
+      {
+        id: 5,
+        title: "Observasi Sentra Produksi UMKM Lokal",
+        category: "Masyarakat",
+        date: "17 November 2026",
+        desc: "Berdiskusi langsung dengan pelaku usaha rumahan terkait tantangan kemasan dan pemasaran digital.",
+        palette: "gold"
+      },
+      {
+        id: 6,
+        title: "Konsolidasi Lengkap 15 Pengabdi Sanskara",
+        category: "Tim",
+        date: "18 November 2026",
+        desc: "Penguatan solidaritas tim lintas fakultas UIN Maulana Malik Ibrahim Malang siap mengabdi.",
+        palette: "ivory"
+      }
+    ];
+
+    // =========================================================================
+    // 6. STATE & STORAGE MANAGEMENT (POSKO & BUKU TAMU)
+    // =========================================================================
+    const DEFAULT_POSKO = {
+      desa: "Kabupaten Malang, Jawa Timur",
+      dpl: "Dr. H. Ahmad Muzakki, M.Ag.",
+      ketua: "Muhammad Rayhan Al-Faruq"
+    };
+
+    const DEFAULT_GUESTBOOK = [
+      {
+        id: 101,
+        name: "Dr. H. Ahmad Muzakki, M.Ag.",
+        role: "Dosen Pembimbing Lapangan",
+        message: "Selamat mengabdi tim KKM Sanskara! Jaga selalu nama baik almamater UIN Maulana Malik Ibrahim Malang, kedepankan adab di atas ilmu, dan hadirkan program yang benar-benar dirasakan manfaatnya oleh warga.",
+        time: "17 Nov 2026 • 09:30 WIB"
+      },
+      {
+        id: 102,
+        name: "Bapak H. Sutrisno",
+        role: "Perangkat Desa",
+        message: "Kami menyambut baik rencana kehadiran adik-adik mahasiswa KKM Sanskara pada 28 Desember nanti. Program pendampingan UMKM dan Rumah Belajar anak-anak sangat dinantikan oleh warga kami.",
+        time: "17 Nov 2026 • 14:15 WIB"
+      },
+      {
+        id: 103,
+        name: "Raka Pratama (Karang Taruna)",
+        role: "Karang Taruna / Pemuda",
+        message: "Siap berkolaborasi di pelatihan konten kreatif dan Expo Karya Sanskara! Semoga menjadi pengalaman luar biasa bagi pemuda desa dan teman-teman mahasiswa.",
+        time: "18 Nov 2026 • 10:05 WIB"
+      }
+    ];
+
+    let currentProkerCategory = "Semua";
+    let currentProkerSearch = "";
+    let currentTeamDivision = "Semua";
+    let currentGalleryFilter = "Semua";
+    let currentLightboxIndex = 0;
+
+    // =========================================================================
+    // 7. FUNGSI RENDER KOMPONEN UTAMA
+    // =========================================================================
+
+    // Render Program Kerja
+    function renderPrograms() {
+      const grid = document.getElementById("proker-grid");
+      const emptyState = document.getElementById("proker-empty");
+
+      const filtered = programsData.filter((p) => {
+        const matchCat =
+          currentProkerCategory === "Semua" ||
+          (currentProkerCategory === "Unggulan" && p.featured) ||
+          p.category === currentProkerCategory;
+        const q = currentProkerSearch.trim().toLowerCase();
+        const matchSearch =
+          !q ||
+          p.title.toLowerCase().includes(q) ||
+          p.summary.toLowerCase().includes(q) ||
+          p.division.toLowerCase().includes(q);
+        return matchCat && matchSearch;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = "";
+        emptyState.classList.remove("hidden");
+        return;
+      }
+
+      emptyState.classList.add("hidden");
+      grid.innerHTML = filtered
+        .map(
+          (p) => `
+        <article class="bg-ivory-50 rounded-3xl p-6 border ${
+          p.featured ? "border-gold-500/70 ring-1 ring-gold-500/20" : "border-ivory-300"
+        } shadow-sm hover:shadow-luxury transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+              <span class="px-3 py-1 rounded-full bg-burgundy-100 text-burgundy-800 text-[11px] font-bold tracking-wide">
+                ${p.category}
+              </span>
+              <div class="flex items-center gap-1.5">
+                ${
+                  p.featured
+                    ? `<span class="px-2.5 py-1 rounded-full bg-gold-500/20 text-gold-600 text-[11px] font-bold">★ Unggulan</span>`
+                    : ""
+                }
+                <span class="px-2.5 py-1 rounded-full bg-ivory-200 text-taupe text-[11px] font-semibold">
+                  ${p.week}
+                </span>
+              </div>
+            </div>
+
+            <h3 class="font-serif font-bold text-xl text-burgundy-900 group-hover:text-burgundy-700 transition-colors leading-snug mb-2.5">
+              ${p.title}
+            </h3>
+
+            <p class="text-xs sm:text-sm text-taupe leading-relaxed mb-5">
+              ${p.summary}
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-ivory-200 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-gold-500"></span>
+              <span class="text-xs font-semibold text-burgundy-950">${p.status}</span>
+            </div>
+            <button onclick="openProkerModal(${p.id})" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-burgundy-900 hover:bg-burgundy-700 text-ivory-50 text-xs font-bold transition-colors">
+              <span>Detail Program</span>
+              <span>→</span>
+            </button>
+          </div>
+        </article>
+      `
+        )
+        .join("");
+    }
+
+    // Render Anggota Tim
+    function renderTeam() {
+      const grid = document.getElementById("team-grid");
+      const poskoData = getPoskoSettings();
+
+      const members = teamMembersData.map((m, idx) => {
+        if (idx === 0) {
+          return { ...m, name: poskoData.ketua };
+        }
+        return m;
+      });
+
+      const filtered = members.filter(
+        (m) => currentTeamDivision === "Semua" || m.division === currentTeamDivision
+      );
+
+      grid.innerHTML = filtered
+        .map((m) => {
+          const initials = m.name
+            .split(" ")
+            .slice(0, 2)
+            .map((n) => n[0])
+            .join("")
+            .toUpperCase();
+          const isLeader = m.role.includes("Ketua") || m.role.includes("Koordinator");
+
+          return `
+          <div class="bg-ivory-50 rounded-3xl p-5 border ${
+            isLeader ? "border-gold-500/60" : "border-ivory-300"
+          } shadow-sm hover:shadow-luxury transition-all duration-300 flex flex-col justify-between text-center group">
+            <div>
+              <!-- Avatar Ilustrasi Inisial Burgundy-Gold -->
+              <div class="w-16 h-16 mx-auto rounded-2xl ${
+                isLeader
+                  ? "bg-gradient-to-br from-burgundy-900 via-burgundy-800 to-burgundy-700 text-gold-400 border-2 border-gold-500"
+                  : "bg-burgundy-100 text-burgundy-900 border border-burgundy-700/20"
+              } flex items-center justify-center font-serif font-bold text-xl shadow-sm mb-4 group-hover:scale-105 transition-transform">
+                ${initials}
+              </div>
+
+              <span class="inline-block px-2.5 py-0.5 rounded-full ${
+                isLeader ? "bg-burgundy-900 text-ivory-50" : "bg-ivory-200 text-burgundy-800"
+              } text-[11px] font-bold mb-2">
+                ${m.role}
+              </span>
+
+              <h3 class="font-serif font-bold text-base text-burgundy-950 leading-snug">
+                ${m.name}
+              </h3>
+
+              <p class="text-xs font-medium text-gold-600 mt-1">${m.prodi}</p>
+              <p class="text-[11px] text-taupe mt-0.5">${m.division}</p>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-ivory-200">
+              <p class="text-[11px] italic text-taupe/90 mb-2">“${m.motto}”</p>
+              <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-burgundy-800">
+                <span>IG: ${m.ig}</span>
+              </span>
+            </div>
+          </div>
+        `;
+        })
+        .join("");
+    }
+
+    // Render Linimasa (Timeline)
+    function renderTimeline() {
+      const container = document.getElementById("timeline-container");
+      container.innerHTML = timelineData
+        .map((item, index) => {
+          const isEven = index % 2 === 0;
+          return `
+          <div class="relative flex flex-col md:flex-row items-start md:items-center justify-between pl-12 md:pl-0">
+            <!-- Titik Penanda Tengah -->
+            <div class="absolute left-3 md:left-1/2 transform md:-translate-x-1/2 w-5 h-5 rounded-full bg-gold-400 border-4 border-burgundy-900 shadow-md z-10 mt-1.5 md:mt-0"></div>
+
+            <!-- Kartu Konten Kiri / Kanan -->
+            <div class="w-full md:w-[46%] ${isEven ? "md:mr-auto md:text-right" : "md:ml-auto md:text-left"}">
+              <div class="bg-ivory-50 text-burgundy-950 rounded-3xl p-6 border border-gold-500/40 shadow-luxury-lg hover:border-gold-400 transition-all">
+                <div class="flex flex-wrap items-center gap-2 mb-2 ${isEven ? "md:justify-end" : "md:justify-start"}">
+                  <span class="px-3 py-1 rounded-full bg-burgundy-900 text-gold-400 text-[11px] font-bold uppercase tracking-wider">
+                    ${item.phase}
+                  </span>
+                  <span class="px-2.5 py-1 rounded-full bg-ivory-200 text-burgundy-800 text-[11px] font-semibold">
+                    ${item.badge}
+                  </span>
+                </div>
+                <div class="text-xs font-bold text-gold-600 uppercase tracking-wider mb-1">${item.date}</div>
+                <h3 class="font-serif font-bold text-xl text-burgundy-900 mb-2">${item.title}</h3>
+                <p class="text-xs sm:text-sm text-taupe leading-relaxed">${item.desc}</p>
+              </div>
+            </div>
+          </div>
+        `;
+        })
+        .join("");
+    }
+
+    // Render Jurnal Kegiatan
+    function renderJournal() {
+      const grid = document.getElementById("journal-grid");
+      grid.innerHTML = articlesData
+        .map(
+          (art) => `
+        <article class="bg-ivory-50 rounded-3xl overflow-hidden border border-ivory-300 shadow-sm hover:shadow-luxury transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <!-- Header Visual Artikel -->
+            <div class="h-40 bg-batik-burgundy p-6 flex flex-col justify-between relative overflow-hidden">
+              <div class="flex items-center justify-between relative z-10">
+                <span class="px-3 py-1 rounded-full bg-gold-500 text-burgundy-950 text-[11px] font-bold uppercase tracking-wider">
+                  ${art.category}
+                </span>
+                <span class="text-xs text-ivory-200/85">${art.date}</span>
+              </div>
+              <div class="font-script text-4xl text-ivory-50/25 self-end select-none">Sanskara</div>
+            </div>
+
+            <div class="p-6">
+              <h3 class="font-serif font-bold text-xl text-burgundy-900 group-hover:text-burgundy-700 transition-colors leading-snug mb-3">
+                ${art.title}
+              </h3>
+              <p class="text-xs sm:text-sm text-taupe leading-relaxed">
+                ${art.excerpt}
+              </p>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-3 border-t border-ivory-200 flex items-center justify-between">
+            <span class="text-[11px] font-medium text-taupe">${art.author}</span>
+            <button onclick="openArticleModal(${art.id})" class="text-xs font-bold text-burgundy-800 hover:text-burgundy-950 inline-flex items-center gap-1">
+              <span>Baca Artikel</span>
+              <span>→</span>
+            </button>
+          </div>
+        </article>
+      `
+        )
+        .join("");
+    }
+
+    // Helper SVG Ilustrasi Galeri Tema Burgundy-Ivory
+    function getGalleryArtworkSVG(item) {
+      const bgColors = {
+        burgundy: "#4A0D25",
+        gold: "#641433",
+        ivory: "#2B0916"
+      };
+      const bg = bgColors[item.palette] || "#4A0D25";
+      return `
+        <svg class="w-full h-full object-cover" viewBox="0 0 600 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="600" height="360" fill="${bg}"/>
+          <circle cx="500" cy="70" r="140" fill="#C69C5E" fill-opacity="0.16"/>
+          <circle cx="110" cy="300" r="120" fill="#FFFDF9" fill-opacity="0.08"/>
+          <path d="M0 270C140 220 260 310 420 250C500 220 560 235 600 250V360H0V270Z" fill="#882248" fill-opacity="0.55"/>
+          <path d="M0 305C180 265 340 340 600 285V360H0V305Z" fill="#FFFDF9" fill-opacity="0.12"/>
+          <rect x="36" y="32" width="528" height="296" rx="20" stroke="#C69C5E" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 4"/>
+          <text x="50%" y="44%" text-anchor="middle" fill="#C69C5E" font-family="Georgia, serif" font-size="14" letter-spacing="4" font-weight="bold">DOKUMENTASI KKM SANSKARA</text>
+          <text x="50%" y="56%" text-anchor="middle" fill="#FFFDF9" font-family="Georgia, serif" font-size="22" font-weight="bold">${item.category.toUpperCase()}</text>
+          <text x="50%" y="66%" text-anchor="middle" fill="#F3ECE1" font-family="sans-serif" font-size="13" opacity="0.85">${item.date}</text>
+        </svg>
+      `;
+    }
+
+    // Render Galeri Dokumentasi
+    function renderGallery() {
+      const grid = document.getElementById("gallery-grid");
+      const filtered = galleryData.filter(
+        (g) => currentGalleryFilter === "Semua" || g.category === currentGalleryFilter
+      );
+
+      grid.innerHTML = filtered
+        .map(
+          (g) => `
+        <button onclick="openLightbox(${g.id})" class="text-left group bg-ivory-50 rounded-3xl overflow-hidden border border-ivory-300 shadow-sm hover:shadow-luxury transition-all duration-300 focus:outline-none">
+          <div class="aspect-[16/10] w-full overflow-hidden relative">
+            ${getGalleryArtworkSVG(g)}
+            <div class="absolute inset-0 bg-burgundy-950/0 group-hover:bg-burgundy-950/35 transition-colors flex items-center justify-center">
+              <span class="opacity-0 group-hover:opacity-100 transition-opacity px-4 py-2 rounded-full bg-ivory-50 text-burgundy-900 text-xs font-bold shadow-md">
+                🔍 Perbesar Foto
+              </span>
+            </div>
+          </div>
+          <div class="p-5">
+            <div class="flex items-center justify-between text-xs mb-1.5">
+              <span class="font-bold text-burgundy-800">${g.category}</span>
+              <span class="text-taupe">${g.date}</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-burgundy-900 group-hover:text-burgundy-700 transition-colors">
+              ${g.title}
+            </h3>
+            <p class="text-xs text-taupe mt-1 line-clamp-2">${g.desc}</p>
+          </div>
+        </button>
+      `
+        )
+        .join("");
+    }
+
+    // =========================================================================
+    // 8. BUKU TAMU (LOCALSTORAGE PERSISTENCE)
+    // =========================================================================
+    function getGuestbookEntries() {
+      try {
+        const stored = localStorage.getItem("sanskara_guestbook_v1");
+        if (stored) {
+          return JSON.parse(stored);
+        }
+      } catch (e) {
+        console.warn("LocalStorage tidak tersedia:", e);
+      }
+      return DEFAULT_GUESTBOOK;
+    }
+
+    function saveGuestbookEntries(entries) {
+      try {
+        localStorage.setItem("sanskara_guestbook_v1", JSON.stringify(entries));
+      } catch (e) {
+        console.warn("Gagal menyimpan buku tamu:", e);
+      }
+    }
+
+    function renderGuestbook() {
+      const list = document.getElementById("guestbook-list");
+      const countEl = document.getElementById("gb-count");
+      const entries = getGuestbookEntries();
+
+      countEl.textContent = entries.length;
+      list.innerHTML = entries
+        .map(
+          (item) => `
+        <div class="bg-ivory-50 rounded-2xl p-5 border border-ivory-300 shadow-sm animate-fade-in">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2.5">
+            <div class="flex items-center gap-2.5">
+              <div class="w-9 h-9 rounded-xl bg-burgundy-900 text-gold-400 font-serif font-bold text-sm flex items-center justify-center">
+                ${item.name.charAt(0).toUpperCase()}
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-burgundy-950">${escapeHTML(item.name)}</h4>
+                <span class="inline-block px-2 py-0.5 rounded-md bg-burgundy-100 text-burgundy-800 text-[10px] font-bold">
+                  ${escapeHTML(item.role)}
+                </span>
+              </div>
+            </div>
+            <span class="text-[11px] text-taupe">${escapeHTML(item.time)}</span>
+          </div>
+          <p class="text-xs sm:text-sm text-burgundy-950/90 leading-relaxed pl-11">
+            “${escapeHTML(item.message)}”
+          </p>
+        </div>
+      `
+        )
+        .join("");
+    }
+
+    function escapeHTML(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    // =========================================================================
+    // 9. PENGATURAN POSKO & DPL (LOCALSTORAGE)
+    // =========================================================================
+    function getPoskoSettings() {
+      try {
+        const stored = localStorage.getItem("sanskara_posko_v1");
+        if (stored) {
+          return { ...DEFAULT_POSKO, ...JSON.parse(stored) };
+        }
+      } catch (e) {
+        console.warn("Gagal membaca pengaturan posko:", e);
+      }
+      return DEFAULT_POSKO;
+    }
+
+    function applyPoskoSettings() {
+      const data = getPoskoSettings();
+      const heroPoskoEl = document.getElementById("hero-posko-label");
+      const dplNameEl = document.getElementById("dpl-display-name");
+      const desaSubEl = document.getElementById("desa-display-sub");
+      const contactPoskoEl = document.getElementById("contact-posko-address");
+
+      if (heroPoskoEl) heroPoskoEl.textContent = `Posko: ${data.desa}`;
+      if (dplNameEl) dplNameEl.textContent = data.dpl;
+      if (desaSubEl) desaSubEl.textContent = `Posko ${data.desa}`;
+      if (contactPoskoEl) contactPoskoEl.textContent = data.desa;
+      renderTeam();
+    }
+
+    function openPoskoModal() {
+      const data = getPoskoSettings();
+      document.getElementById("input-desa").value = data.desa;
+      document.getElementById("input-dpl").value = data.dpl;
+      document.getElementById("input-ketua").value = data.ketua;
+      openModal("posko-modal");
+    }
+
+    function resetPoskoSettings() {
+      try {
+        localStorage.removeItem("sanskara_posko_v1");
+      } catch (e) {}
+      applyPoskoSettings();
+      closeModal("posko-modal");
+      showToast("Data posko dikembalikan ke pengaturan awal.");
+    }
+
+    // =========================================================================
+    // 10. MODAL HANDLERS & LIGHTBOX
+    // =========================================================================
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        document.body.style.overflow = "hidden";
+      }
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        document.body.style.overflow = "";
+      }
+    }
+
+    function openProkerModal(id) {
+      const p = programsData.find((item) => item.id === id);
+      if (!p) return;
+
+      document.getElementById("pm-category").textContent = p.category;
+      document.getElementById("pm-week").textContent = p.week;
+      document.getElementById("pm-status").textContent = `Status: ${p.status}`;
+      document.getElementById("pm-title").textContent = p.title;
+      document.getElementById("pm-background").textContent = p.background;
+      document.getElementById("pm-objective").textContent = p.objective;
+      document.getElementById("pm-target").textContent = p.target;
+      document.getElementById("pm-division").textContent = p.division;
+
+      document.getElementById("pm-indicators").innerHTML = p.indicators
+        .map(
+          (ind) => `
+        <li class="flex items-start gap-2.5">
+          <span class="w-5 h-5 rounded-full bg-burgundy-100 text-burgundy-800 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">✓</span>
+          <span>${ind}</span>
+        </li>
+      `
+        )
+        .join("");
+
+      openModal("proker-modal");
+    }
+
+    function openArticleModal(id) {
+      const art = articlesData.find((item) => item.id === id);
+      if (!art) return;
+
+      document.getElementById("am-category").textContent = art.category;
+      document.getElementById("am-date").textContent = art.date;
+      document.getElementById("am-title").textContent = art.title;
+      document.getElementById("am-author").textContent = `Ditulis oleh ${art.author}`;
+      document.getElementById("am-body").innerHTML = art.content
+        .map((para) => `<p>${para}</p>`)
+        .join("");
+
+      openModal("article-modal");
+    }
+
+    function openLightbox(id) {
+      const idx = galleryData.findIndex((item) => item.id === id);
+      if (idx === -1) return;
+      currentLightboxIndex = idx;
+      updateLightboxContent();
+      openModal("lightbox-modal");
+    }
+
+    function navigateLightbox(step) {
+      currentLightboxIndex =
+        (currentLightboxIndex + step + galleryData.length) % galleryData.length;
+      updateLightboxContent();
+    }
+
+    function updateLightboxContent() {
+      const item = galleryData[currentLightboxIndex];
+      document.getElementById("lb-visual-container").innerHTML = `
+        <div class="w-full max-w-2xl aspect-[16/10] rounded-2xl overflow-hidden shadow-luxury-lg border border-gold-500/40">
+          ${getGalleryArtworkSVG(item)}
+        </div>
+      `;
+      document.getElementById("lb-cat").textContent = item.category;
+      document.getElementById("lb-date").textContent = item.date;
+      document.getElementById("lb-title").textContent = item.title;
+      document.getElementById("lb-desc").textContent = item.desc;
+    }
+
+    // =========================================================================
+    // 11. LIVE COUNTDOWN TIMER MENUJU 28 DESEMBER 2026
+    // =========================================================================
+    function startCountdown() {
+      // Target: 28 Desember 2026 pukul 07:00 WIB (UTC+7)
+      const targetStart = new Date("2026-12-28T07:00:00+07:00").getTime();
+      const targetEnd = new Date("2027-02-04T16:00:00+07:00").getTime();
+
+      function updateTimer() {
+        const now = Date.now();
+        let diff = targetStart - now;
+        const captionEl = document.getElementById("countdown-caption");
+
+        if (diff <= 0 && now < targetEnd) {
+          captionEl.textContent = "KKM Sanskara Sedang Berlangsung • Menuju Penarikan";
+          diff = targetEnd - now;
+        } else if (now >= targetEnd) {
+          captionEl.textContent = "Pengabdian KKM Sanskara Telah Terlaksana dengan Sukses";
+          diff = 0;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / 1000 / 60) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        document.getElementById("cd-days").textContent = String(days).padStart(2, "0");
+        document.getElementById("cd-hours").textContent = String(hours).padStart(2, "0");
+        document.getElementById("cd-minutes").textContent = String(minutes).padStart(2, "0");
+        document.getElementById("cd-seconds").textContent = String(seconds).padStart(2, "0");
+      }
+
+      updateTimer();
+      setInterval(updateTimer, 1000);
+    }
+
+    // =========================================================================
+    // 12. UTILITAS: CLIPBOARD, TOAST, & FILTER HELPERS
+    // =========================================================================
+    function copyToClipboard(text, successMsg) {
+      const tempInput = document.createElement("textarea");
+      tempInput.value = text;
+      tempInput.style.position = "fixed";
+      tempInput.style.opacity = "0";
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      try {
+        document.execCommand("copy");
+        showToast(successMsg);
+      } catch (err) {
+        showToast("Gagal menyalin teks secara otomatis.");
+      }
+      document.body.removeChild(tempInput);
+    }
+
+    let toastTimeout;
+    function showToast(msg) {
+      const toast = document.getElementById("toast-notification");
+      const msgEl = document.getElementById("toast-message");
+      msgEl.textContent = msg;
+      toast.classList.remove("hidden");
+      toast.classList.add("flex");
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.add("hidden");
+        toast.classList.remove("flex");
+      }, 3400);
+    }
+
+    function jumpToProkerCategory(category) {
+      currentProkerCategory = category;
+      document.querySelectorAll(".proker-filter-btn").forEach((btn) => {
+        if (btn.dataset.category === category) {
+          btn.classList.add("bg-burgundy-900", "text-ivory-50");
+          btn.classList.remove("bg-ivory-100", "text-burgundy-900");
+        } else {
+          btn.classList.remove("bg-burgundy-900", "text-ivory-50");
+          btn.classList.add("bg-ivory-100", "text-burgundy-900");
+        }
+      });
+      renderPrograms();
+      document.getElementById("proker").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function resetProkerFilter() {
+      currentProkerCategory = "Semua";
+      currentProkerSearch = "";
+      document.getElementById("proker-search").value = "";
+      jumpToProkerCategory("Semua");
+    }
+
+    // =========================================================================
+    // 13. INISIALISASI EVENT LISTENERS SAAT HALAMAN DIMUAT
+    // =========================================================================
+    document.addEventListener("DOMContentLoaded", () => {
+      // Render seluruh bagian dinamis
+      renderPrograms();
+      applyPoskoSettings();
+      renderTimeline();
+      renderJournal();
+      renderGallery();
+      renderGuestbook();
+      startCountdown();
+
+      // Mobile Navigation Drawer Toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const iconOpen = document.getElementById("icon-menu-open");
+      const iconClose = document.getElementById("icon-menu-close");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        const isHidden = mobileMenu.classList.contains("hidden");
+        mobileMenu.classList.toggle("hidden", !isHidden);
+        iconOpen.classList.toggle("hidden", isHidden);
+        iconClose.classList.toggle("hidden", !isHidden);
+        mobileMenuBtn.setAttribute("aria-expanded", String(isHidden));
+      });
+
+      document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          iconOpen.classList.remove("hidden");
+          iconClose.classList.add("hidden");
+        });
+      });
+
+      // Filter Program Kerja
+      document.querySelectorAll(".proker-filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          currentProkerCategory = btn.dataset.category;
+          document.querySelectorAll(".proker-filter-btn").forEach((b) => {
+            b.classList.remove("bg-burgundy-900", "text-ivory-50");
+            b.classList.add("bg-ivory-100", "text-burgundy-900");
+          });
+          btn.classList.add("bg-burgundy-900", "text-ivory-50");
+          btn.classList.remove("bg-ivory-100", "text-burgundy-900");
+          renderPrograms();
+        });
+      });
+
+      // Pencarian Program Kerja
+      document.getElementById("proker-search").addEventListener("input", (e) => {
+        currentProkerSearch = e.target.value;
+        renderPrograms();
+      });
+
+      // Filter Divisi Tim
+      document.querySelectorAll(".team-filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          currentTeamDivision = btn.dataset.division;
+          document.querySelectorAll(".team-filter-btn").forEach((b) => {
+            b.classList.remove("bg-burgundy-900", "text-ivory-50");
+            b.classList.add("bg-ivory-50", "text-burgundy-900", "border", "border-ivory-300");
+          });
+          btn.classList.add("bg-burgundy-900", "text-ivory-50");
+          btn.classList.remove("bg-ivory-50", "text-burgundy-900", "border", "border-ivory-300");
+          renderTeam();
+        });
+      });
+
+      // Filter Galeri
+      document.querySelectorAll(".gal-filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          currentGalleryFilter = btn.dataset.gal;
+          document.querySelectorAll(".gal-filter-btn").forEach((b) => {
+            b.classList.remove("bg-burgundy-900", "text-ivory-50");
+            b.classList.add("bg-ivory-50", "text-burgundy-900", "border", "border-ivory-300");
+          });
+          btn.classList.add("bg-burgundy-900", "text-ivory-50");
+          btn.classList.remove("bg-ivory-50", "text-burgundy-900", "border", "border-ivory-300");
+          renderGallery();
+        });
+      });
+
+      // Submit Form Buku Tamu
+      document.getElementById("guestbook-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("gb-name").value.trim();
+        const role = document.getElementById("gb-role").value;
+        const message = document.getElementById("gb-message").value.trim();
+
+        if (!name || !message) return;
+
+        const now = new Date();
+        const formattedDate = now.toLocaleDateString("id-ID", {
+          day: "2-digit",
+          month: "short",
+          year: "numeric"
+        });
+        const formattedTime = now.toLocaleTimeString("id-ID", {
+          hour: "2-digit",
+          minute: "2-digit"
+        });
+
+        const entries = getGuestbookEntries();
+        entries.unshift({
+          id: Date.now(),
+          name,
+          role,
+          message,
+          time: `${formattedDate} • ${formattedTime} WIB`
+        });
+
+        saveGuestbookEntries(entries);
+        renderGuestbook();
+        e.target.reset();
+        showToast("Terima kasih! Pesan Anda telah ditambahkan ke papan apresiasi.");
+      });
+
+      // Submit Form Kustomisasi Posko
+      document.getElementById("posko-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const updated = {
+          desa: document.getElementById("input-desa").value.trim() || DEFAULT_POSKO.desa,
+          dpl: document.getElementById("input-dpl").value.trim() || DEFAULT_POSKO.dpl,
+          ketua: document.getElementById("input-ketua").value.trim() || DEFAULT_POSKO.ketua
+        };
+        try {
+          localStorage.setItem("sanskara_posko_v1", JSON.stringify(updated));
+        } catch (err) {}
+        applyPoskoSettings();
+        closeModal("posko-modal");
+        showToast("Identitas posko dan DPL berhasil diperbarui!");
+      });
+
+      // Tutup modal saat klik latar gelap atau menekan Escape
+      ["proker-modal", "article-modal", "lightbox-modal", "posko-modal"].forEach((id) => {
+        const modal = document.getElementById(id);
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            closeModal(id);
+          }
+        });
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          ["proker-modal", "article-modal", "lightbox-modal", "posko-modal"].forEach(closeModal);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
